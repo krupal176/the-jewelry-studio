@@ -1,0 +1,81 @@
+/* Scoped to engagement and wedding listing pages; shared typography and cards stay intact. */
+.ring-listing .ring-listing-filters{display:grid;grid-template-columns:minmax(320px,1.15fr) minmax(240px,.85fr) minmax(230px,.9fr);align-items:start;gap:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;margin:0 0 30px}
+.ring-listing .ring-listing-filters fieldset{border:0;padding:0;margin:0;min-width:0}
+.ring-listing .ring-listing-filters legend{padding:0;margin:0 0 15px;font-size:11px;font-weight:500;letter-spacing:.03em;color:var(--ink)}
+.ring-listing .ring-listing-prices legend span{font-size:9px;color:var(--muted);font-weight:400;margin-left:7px;letter-spacing:.07em}
+.ring-listing .ring-listing-metal-options{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.ring-listing .ring-listing-metal{display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;min-width:45px;font-size:9px;line-height:1.4;color:var(--muted)}
+.ring-listing .ring-listing-metal-disc{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;border:1px solid #b9aaa0;position:relative;color:var(--wine);font-size:9px;transition:box-shadow .18s}
+.ring-listing .ring-listing-metal-white{background:linear-gradient(130deg,#fbfbf7 10%,#c9c9c6 48%,#fffdfa 74%,#ccc8c0)}
+.ring-listing .ring-listing-metal-yellow{background:linear-gradient(130deg,#f7e9b8 10%,#bea268 48%,#e9d5a5 74%,#c5a56c)}
+.ring-listing .ring-listing-metal-rose{background:linear-gradient(130deg,#f7d9c7 10%,#c99b8b 48%,#eed0ba 74%,#d0a28c)}
+.ring-listing .ring-listing-metal-platinum{background:linear-gradient(130deg,#f2f4f3 10%,#aeb8bb 48%,#e5e9e8 74%,#bbc5c6)}
+.ring-listing .ring-listing-metal-all{background:var(--ivory)}
+.ring-listing .ring-listing-metal-other{background:var(--warm)}
+.ring-listing .ring-listing-metal:hover .ring-listing-metal-disc,.ring-listing .ring-listing-metal.is-selected .ring-listing-metal-disc{box-shadow:0 0 0 3px var(--ivory),0 0 0 4px var(--wine)}
+.ring-listing .ring-listing-metal.is-selected{color:var(--wine)}
+.ring-listing .ring-listing-range{height:26px;margin:0 8px 12px;position:relative}
+.ring-listing .ring-listing-range-track{height:2px;background:var(--line);position:absolute;top:12px;left:0;right:0}
+.ring-listing .ring-listing-range-track span{position:absolute;top:0;height:2px;background:var(--wine)}
+.ring-listing .ring-listing-range input{position:absolute;inset:0;width:100%;height:26px;padding:0;margin:0;background:none;pointer-events:none;-webkit-appearance:none;appearance:none;border:0;outline-offset:3px}
+.ring-listing .ring-listing-range input::-webkit-slider-runnable-track{height:2px;background:transparent}
+.ring-listing .ring-listing-range input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;pointer-events:auto;width:17px;height:17px;border:1px solid var(--wine);border-radius:50%;background:var(--ivory);margin-top:-7.5px;cursor:ew-resize;box-shadow:0 0 0 3px var(--ivory)}
+.ring-listing .ring-listing-range input::-moz-range-track{height:2px;background:transparent}
+.ring-listing .ring-listing-range input::-moz-range-thumb{pointer-events:auto;width:15px;height:15px;border:1px solid var(--wine);border-radius:50%;background:var(--ivory);cursor:ew-resize;box-shadow:0 0 0 3px var(--ivory)}
+.ring-listing .ring-listing-range input:focus-visible::-webkit-slider-thumb{background:var(--wine);box-shadow:0 0 0 3px var(--ivory),0 0 0 5px var(--wine)}
+.ring-listing .ring-listing-range input:focus-visible::-moz-range-thumb{background:var(--wine);box-shadow:0 0 0 3px var(--ivory),0 0 0 5px var(--wine)}
+.ring-listing .ring-listing-price-inputs{display:grid;grid-template-columns:minmax(0,1fr) 10px minmax(0,1fr);gap:9px;align-items:end}
+.ring-listing .ring-listing-price-inputs>span{align-self:end;padding-bottom:10px;font-size:10px;color:var(--muted)}
+.ring-listing .ring-listing-price-inputs label{display:block;min-width:0;font-size:9px;color:var(--muted);line-height:1.4}
+.ring-listing .ring-listing-price-inputs label>span{display:flex;align-items:center;border:1px solid var(--line);margin-top:4px;min-height:36px}
+.ring-listing .ring-listing-price-inputs i{font-style:normal;padding-left:10px;color:var(--ink);font-size:11px}
+.ring-listing .ring-listing-price-inputs input{width:100%;min-width:0;border:0;padding:8px 6px;background:transparent;font-size:11px;color:var(--ink);-moz-appearance:textfield}
+.ring-listing .ring-listing-price-inputs input::-webkit-inner-spin-button,.ring-listing .ring-listing-price-inputs input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.ring-listing .ring-listing-price-inputs input[aria-invalid="true"]{box-shadow:inset 0 -2px var(--wine)}
+.ring-listing .ring-listing-summary{display:flex;flex-direction:column;align-items:flex-end;gap:10px;min-width:0}
+.ring-listing .ring-listing-count{font-size:11px;line-height:1.5;margin:0;text-align:right;color:var(--muted);overflow-wrap:anywhere}
+.ring-listing .ring-listing-selects{display:grid;grid-template-columns:minmax(85px,.75fr) minmax(130px,1.25fr);gap:10px;width:100%}
+.ring-listing .ring-listing-selects label{display:flex;flex-direction:column;gap:4px;font-size:9px;color:var(--muted);min-width:0}
+.ring-listing .ring-listing-selects select{background:transparent;border:1px solid var(--line);border-radius:0;color:var(--ink);font-size:10px;min-height:36px;width:100%;padding:8px 4px}
+.ring-listing .ring-listing-reset{font-size:10px;padding:0;border-bottom:1px solid var(--line);color:var(--muted);line-height:1.65}
+.ring-listing .ring-listing-reset:hover{color:var(--wine);border-color:var(--wine)}
+.ring-listing .ring-listing-error{grid-column:1/-1;margin:0;color:var(--wine);font-size:11px;line-height:1.6}
+.ring-listing .ring-listing-error[hidden]{display:none}
+.ring-listing .ring-listing-foot{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-top:26px}
+.ring-listing .ring-listing-foot .snapshot-note{margin:0;max-width:690px;line-height:1.7}
+.ring-listing .ring-listing-foot .text-link{flex-shrink:0}
+@media(max-width:1200px){.ring-listing .ring-listing-filters{grid-template-columns:minmax(280px,1fr) minmax(230px,1fr);gap:24px}.ring-listing .ring-listing-summary{grid-column:1/-1;display:grid;grid-template-columns:1fr minmax(240px,330px) auto;align-items:end;gap:24px}.ring-listing .ring-listing-count{text-align:left;align-self:center}.ring-listing .ring-listing-reset{justify-self:end;align-self:end;margin-bottom:8px}}
+@media(max-width:650px){.ring-listing .ring-listing-filters{grid-template-columns:minmax(0,1fr);gap:26px;padding:23px 0;margin-bottom:25px}.ring-listing .ring-listing-metal-options{gap:17px;justify-content:space-between}.ring-listing .ring-listing-metal{min-width:40px;font-size:9px}.ring-listing .ring-listing-summary{grid-column:auto;grid-template-columns:1fr auto;gap:13px}.ring-listing .ring-listing-selects{grid-column:1/-1;grid-row:2;grid-template-columns:1fr 1fr}.ring-listing .ring-listing-reset{margin:0;align-self:center}.ring-listing .ring-listing-range{margin-bottom:14px}.ring-listing .ring-listing-price-inputs label>span{min-height:40px}.ring-listing .ring-listing-price-inputs input,.ring-listing .ring-listing-selects select{font-size:12px;padding:10px 8px}.ring-listing .ring-listing-selects select{min-height:40px}.ring-listing .ring-listing-foot{align-items:flex-start;flex-direction:column;gap:16px}.ring-listing .ring-listing-error{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.ring-listing .ring-listing-metal-disc{transition:none}}
+
+/* Ring shopping: compact photo categories, metal/price bar, four-column catalog. */
+.ring-collection-heading{padding:32px 5% 22px;background:var(--ivory)}
+.ring-collection-heading h1{font-size:44px;margin:4px 0 8px}
+.ring-collection-heading>p:last-child{display:none}
+.collection-body.ring-listing{max-width:1740px;padding:18px 4% 70px;margin:auto}
+.ring-listing .collection-category-track{grid-auto-columns:calc((100% - 60px)/7);gap:10px}
+.ring-listing .collection-category-visual{aspect-ratio:1/1.05}
+.ring-listing .collection-category-label{font-size:15px;padding:10px 6px}
+.ring-listing .ring-listing-filters{grid-template-columns:310px 270px 1fr;gap:34px;padding:22px 0;align-items:center}
+.ring-listing .ring-listing-metal-disc{width:30px;height:30px}
+.ring-listing .ring-listing-price-inputs label>span{min-height:28px}
+.ring-listing .ring-listing-price-inputs input{padding:5px 6px}
+.ring-listing .product-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 10px}
+.ring-listing .product-card{background:#fffdfa}
+.ring-listing .product-image{aspect-ratio:1/1;background:#faf9f6}
+.ring-listing .product-image img{padding:0;object-fit:contain}
+.ring-listing .product-info{padding:16px 14px 19px}
+.ring-listing .product-info h3{font-size:16px;line-height:1.5;margin:5px 0 9px}
+.studio-card-metals{display:flex;align-items:center;gap:8px;margin:10px 0}
+.studio-card-metals button{width:17px;height:17px;min-height:17px;border:1px solid #cbbeb6;border-radius:50%;padding:0}
+.studio-card-metals button[aria-pressed=true]{outline:1px solid var(--wine);outline-offset:3px}
+.studio-card-metals button:hover{outline:1px solid var(--wine);outline-offset:2px}
+.studio-card-metals [data-metal-tone="White gold"]{background:#dfdedc}
+.studio-card-metals [data-metal-tone="Yellow gold"]{background:#efd5a3}
+.studio-card-metals [data-metal-tone="Rose gold"]{background:#dcae9c}
+.studio-card-metals [data-metal-tone="Platinum"]{background:#c7cdce}
+.card-metal-label{font-size:11px;color:var(--muted);margin:8px 0}
+.studio-demo-note{font-size:10px;line-height:1.6;color:var(--wine);letter-spacing:.025em;margin:10px 0 16px}
+.ring-listing .studio-card-metals button{width:19px;height:19px}
+@media(max-width:1100px){.ring-listing .ring-listing-filters{grid-template-columns:1fr 1fr;gap:24px}.ring-listing .collection-category-track{grid-auto-columns:calc((100% - 40px)/5)}.ring-listing .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.ring-collection-heading h1{font-size:34px}.ring-collection-heading{padding:25px 5% 10px}.collection-body.ring-listing{padding:12px 4% 45px}.ring-listing .collection-category-track{grid-auto-columns:41%;gap:8px}.ring-listing .ring-listing-filters{grid-template-columns:1fr;gap:22px}.ring-listing .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 8px}.ring-listing .product-info{padding:11px 9px 14px}.ring-listing .product-info h3{font-size:13px}.ring-listing .product-info .price{font-size:12px}.ring-listing .studio-card-metals{gap:10px;min-height:32px}.ring-listing .studio-card-metals button{position:relative;width:18px;height:18px}.ring-listing .studio-card-metals button:after{content:"";position:absolute;inset:-7px}.card-metal-label{font-size:10px}}

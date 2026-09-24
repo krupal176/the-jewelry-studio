@@ -1,0 +1,1117 @@
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-09-24T16:05:20.214Z",
+  "architecture": "Complete HTML snapshots plus one shared client-side hash router",
+  "pageCount": 154,
+  "productCount": 35,
+  "state": "Empty cart, favorites and ring builder in exported HTML; existing browser localStorage is used during interactive rendering.",
+  "scope": "Primary routes, all catalog products, named collection styles, classic diamond and ring shapes, education topics/guides, policies and shopping/builder routes. Arbitrary combinations of filter parameters are handled by the shared app.",
+  "sourceSha256": {
+    "page-shell.html": "d331ed9dfbdcc933048690267b28c136394d526174d89fec22aa5e362045f9de",
+    "impact-page.js": "13b76556d9b18b54b3d10ee7c3e0845ab768d04afb0d4e40feb3fe8d77f7e621",
+    "diamond-commerce.js": "dff4a7489eea47a9fc0ecc3d17cab9ae88a22b5a04bc17888eab400c4ae3c709",
+    "asset-map.js": "4fe63ede811efe83a3659a6a85f4badd68f0630b87fd3f024ad350bf4a60c076",
+    "inventory-data.js": "c2c6f7e2814240bc9dd2a03949c953f352942a0947f071dcf21006c9946878a6",
+    "inventory.js": "b09962b9298d65852f242b99083fe8c2cb1bb1b9ef590fee63d4d158c0ddd3d2",
+    "catalog.js": "7aa33e1f9b0df92f9b6f5d4121e6a541f8f81a61109d0a37e1c1b7febecc99ae",
+    "shape-icons.js": "f8d505f4d7da46d70bd4be07f080f63e01d2b921243cf935580a7f48160bcc01",
+    "diamond-finder.js": "f4c0078498b794953ffa0ade0429a2e5fb58ca7688fa2e8bf834c44d047cd3be",
+    "education-content.js": "d9eb9326b4a75f68b0eb1cf8afde65c4bc830237e7d52af46faa5671b2c60546",
+    "education-guides.js": "9abf39fe5693de66ad17f524550bfd5eaa5f2ab70827c43b7beff3527ec3b7f1",
+    "education.js": "0dfe28cfe1123c2eebc749a1cc135ac2a68ea9f2f93c6ef45a4e2a2de0cd799b",
+    "site-settings.js": "38a26b27ea280dfdd40b5bebcc09d3ab0a81ad3d76cb2ec43e09e04c821f658b",
+    "ring-builder.js": "c002783157a90213c9b370a2f6b5a636972f7d8573d604bf4967491d17575eea",
+    "ring-cart.js": "ca7f55df3542503af574566d916c47c7ce16c9eae9753434c79e25530b95b12c",
+    "ring-listing.js": "d9fa2de039c9a64487500293407fc000ee0b755e4576b2b9a2711ae65cc509e9",
+    "commerce-support.js": "1d557a1aef87edb5be9a5477aba04cc6279a0064e443a0e9cca26d2df0760306",
+    "studio-pages.js": "fd83b0880bbe3f62906cb4627a3a8c711067281fed5867322781ff23e7f2c50b",
+    "app.js": "773d24dd64e2a54a1de9ee3a022bf02cd038a204ef0e6f4437c112faa53aeae1",
+    "navigation.js": "498beab308fe6cda0213ca3636cbfdda97137a0fe934bb3a575f42ca7975894b",
+    "welcome-offer.js": "dc66c664cfe1962304be5c53f5091e3a0323323b5409eac335531b624948f738",
+    "home-motion.js": "d9adf007b9e23697c024813b13ba15f830884f03fc17f87ca0f75e873d38595d",
+    "home-ring.js": "d4d5e46f92980a8f1d786757566b04a8a146ecc84ec917331f2fba2ac8ae2727",
+    "category-motion.js": "caf3af7b0fa0f2653d14d179c73cec864ffddeefcb787f064cd0c7e28c83d8cf",
+    "header-experience.js": "28084da1c50eff61b200bd9fe0d426722dca65a23c5e7f2c112b96376a5d77d9",
+    "page-entry.js": "e5f313498af9debee3fde3d2544d6326ee3c0f0a504651d761a9e2e10ba3a943"
+  },
+  "pages": [
+    {
+      "route": "#/",
+      "file": "index.html",
+      "label": "Home",
+      "group": "Start here",
+      "mainBytes": 18643
+    },
+    {
+      "route": "#/collection/diamonds",
+      "file": "collection-diamonds.html",
+      "label": "Lab-grown diamonds",
+      "group": "Collections",
+      "mainBytes": 28953
+    },
+    {
+      "route": "#/collection/engagement",
+      "file": "collection-engagement.html",
+      "label": "Engagement rings",
+      "group": "Collections",
+      "mainBytes": 122721
+    },
+    {
+      "route": "#/collection/engagement?style=solitaire",
+      "file": "collection-engagement-solitaire.html",
+      "label": "Engagement rings · Solitaire",
+      "group": "Collection styles",
+      "mainBytes": 98844
+    },
+    {
+      "route": "#/collection/engagement?style=pave",
+      "file": "collection-engagement-pave.html",
+      "label": "Engagement rings · Pavé",
+      "group": "Collection styles",
+      "mainBytes": 94985
+    },
+    {
+      "route": "#/collection/engagement?style=halo",
+      "file": "collection-engagement-halo.html",
+      "label": "Engagement rings · Halo",
+      "group": "Collection styles",
+      "mainBytes": 89708
+    },
+    {
+      "route": "#/collection/engagement?style=hidden-halo",
+      "file": "collection-engagement-hidden-halo.html",
+      "label": "Engagement rings · Hidden halo",
+      "group": "Collection styles",
+      "mainBytes": 83521
+    },
+    {
+      "route": "#/collection/engagement?style=three-stone",
+      "file": "collection-engagement-three-stone.html",
+      "label": "Engagement rings · Three stone",
+      "group": "Collection styles",
+      "mainBytes": 93528
+    },
+    {
+      "route": "#/collection/engagement?style=cluster",
+      "file": "collection-engagement-cluster.html",
+      "label": "Engagement rings · Cluster",
+      "group": "Collection styles",
+      "mainBytes": 84947
+    },
+    {
+      "route": "#/collection/engagement?style=cathedral",
+      "file": "collection-engagement-cathedral.html",
+      "label": "Engagement rings · Cathedral",
+      "group": "Collection styles",
+      "mainBytes": 86610
+    },
+    {
+      "route": "#/collection/engagement?style=signature",
+      "file": "collection-engagement-signature.html",
+      "label": "Engagement rings · Signature",
+      "group": "Collection styles",
+      "mainBytes": 83515
+    },
+    {
+      "route": "#/collection/engagement?style=vintage",
+      "file": "collection-engagement-vintage.html",
+      "label": "Engagement rings · Vintage-inspired",
+      "group": "Collection styles",
+      "mainBytes": 83536
+    },
+    {
+      "route": "#/collection/engagement?style=side-stone",
+      "file": "collection-engagement-side-stone.html",
+      "label": "Engagement rings · Side Stone",
+      "group": "Collection styles",
+      "mainBytes": 84918
+    },
+    {
+      "route": "#/collection/engagement?style=bridal-sets",
+      "file": "collection-engagement-bridal-sets.html",
+      "label": "Engagement rings · Bridal Sets",
+      "group": "Collection styles",
+      "mainBytes": 83521
+    },
+    {
+      "route": "#/collection/wedding",
+      "file": "collection-wedding.html",
+      "label": "Wedding bands",
+      "group": "Collections",
+      "mainBytes": 83088
+    },
+    {
+      "route": "#/collection/wedding?style=eternity",
+      "file": "collection-wedding-eternity.html",
+      "label": "Wedding bands · Eternity",
+      "group": "Collection styles",
+      "mainBytes": 83100
+    },
+    {
+      "route": "#/collection/wedding?style=half-eternity",
+      "file": "collection-wedding-half-eternity.html",
+      "label": "Wedding bands · Half eternity",
+      "group": "Collection styles",
+      "mainBytes": 81743
+    },
+    {
+      "route": "#/collection/wedding?style=pave",
+      "file": "collection-wedding-pave.html",
+      "label": "Wedding bands · Pavé",
+      "group": "Collection styles",
+      "mainBytes": 81719
+    },
+    {
+      "route": "#/collection/wedding?style=channel",
+      "file": "collection-wedding-channel.html",
+      "label": "Wedding bands · Channel",
+      "group": "Collection styles",
+      "mainBytes": 81725
+    },
+    {
+      "route": "#/collection/wedding?style=stackable",
+      "file": "collection-wedding-stackable.html",
+      "label": "Wedding bands · Stackable",
+      "group": "Collection styles",
+      "mainBytes": 81731
+    },
+    {
+      "route": "#/collection/wedding?style=signature",
+      "file": "collection-wedding-signature.html",
+      "label": "Wedding bands · Signature",
+      "group": "Collection styles",
+      "mainBytes": 81731
+    },
+    {
+      "route": "#/collection/jewelry",
+      "file": "collection-jewelry.html",
+      "label": "Fine jewelry",
+      "group": "Collections",
+      "mainBytes": 44846
+    },
+    {
+      "route": "#/collection/earrings",
+      "file": "collection-earrings.html",
+      "label": "Earrings",
+      "group": "Collections",
+      "mainBytes": 2571
+    },
+    {
+      "route": "#/collection/earrings?style=studs",
+      "file": "collection-earrings-studs.html",
+      "label": "Earrings · Studs",
+      "group": "Collection styles",
+      "mainBytes": 2578
+    },
+    {
+      "route": "#/collection/earrings?style=hoops-huggies",
+      "file": "collection-earrings-hoops-huggies.html",
+      "label": "Earrings · Hoops & huggies",
+      "group": "Collection styles",
+      "mainBytes": 2620
+    },
+    {
+      "route": "#/collection/earrings?style=signature",
+      "file": "collection-earrings-signature.html",
+      "label": "Earrings · Signature",
+      "group": "Collection styles",
+      "mainBytes": 2590
+    },
+    {
+      "route": "#/collection/bracelets",
+      "file": "collection-bracelets.html",
+      "label": "Bracelets",
+      "group": "Collections",
+      "mainBytes": 2655
+    },
+    {
+      "route": "#/collection/bracelets?style=tennis",
+      "file": "collection-bracelets-tennis.html",
+      "label": "Bracelets · Tennis",
+      "group": "Collection styles",
+      "mainBytes": 2665
+    },
+    {
+      "route": "#/collection/bracelets?style=flex-bangles",
+      "file": "collection-bracelets-flex-bangles.html",
+      "label": "Bracelets · Flex bangles",
+      "group": "Collection styles",
+      "mainBytes": 2683
+    },
+    {
+      "route": "#/collection/bracelets?style=station-link",
+      "file": "collection-bracelets-station-link.html",
+      "label": "Bracelets · Station & link",
+      "group": "Collection styles",
+      "mainBytes": 2701
+    },
+    {
+      "route": "#/collection/bracelets?style=cuban-link",
+      "file": "collection-bracelets-cuban-link.html",
+      "label": "Bracelets · Cuban link",
+      "group": "Collection styles",
+      "mainBytes": 2677
+    },
+    {
+      "route": "#/collection/necklaces",
+      "file": "collection-necklaces.html",
+      "label": "Necklaces",
+      "group": "Collections",
+      "mainBytes": 2851
+    },
+    {
+      "route": "#/collection/necklaces?style=solitaire",
+      "file": "collection-necklaces-solitaire.html",
+      "label": "Necklaces · Solitaire",
+      "group": "Collection styles",
+      "mainBytes": 2870
+    },
+    {
+      "route": "#/collection/necklaces?style=tennis",
+      "file": "collection-necklaces-tennis.html",
+      "label": "Necklaces · Tennis",
+      "group": "Collection styles",
+      "mainBytes": 2861
+    },
+    {
+      "route": "#/collection/necklaces?style=cross",
+      "file": "collection-necklaces-cross.html",
+      "label": "Necklaces · Cross",
+      "group": "Collection styles",
+      "mainBytes": 2858
+    },
+    {
+      "route": "#/collection/necklaces?style=bezel",
+      "file": "collection-necklaces-bezel.html",
+      "label": "Necklaces · Bezel",
+      "group": "Collection styles",
+      "mainBytes": 2858
+    },
+    {
+      "route": "#/collection/necklaces?style=halo",
+      "file": "collection-necklaces-halo.html",
+      "label": "Necklaces · Halo",
+      "group": "Collection styles",
+      "mainBytes": 2855
+    },
+    {
+      "route": "#/collection/necklaces?style=signature",
+      "file": "collection-necklaces-signature.html",
+      "label": "Necklaces · Signature",
+      "group": "Collection styles",
+      "mainBytes": 2870
+    },
+    {
+      "route": "#/collection/necklaces?style=seasonal",
+      "file": "collection-necklaces-seasonal.html",
+      "label": "Necklaces · Seasonal",
+      "group": "Collection styles",
+      "mainBytes": 2867
+    },
+    {
+      "route": "#/collection/necklaces?style=letter",
+      "file": "collection-necklaces-letter.html",
+      "label": "Necklaces · Letter",
+      "group": "Collection styles",
+      "mainBytes": 2861
+    },
+    {
+      "route": "#/collection/mens-rings",
+      "file": "collection-mens-rings.html",
+      "label": "Men’s rings",
+      "group": "Collections",
+      "mainBytes": 3584
+    },
+    {
+      "route": "#/collection/mens-rings?style=classic",
+      "file": "collection-mens-rings-classic.html",
+      "label": "Men’s rings · Classic",
+      "group": "Collection styles",
+      "mainBytes": 3595
+    },
+    {
+      "route": "#/collection/mens-rings?style=bezel",
+      "file": "collection-mens-rings-bezel.html",
+      "label": "Men’s rings · Bezel",
+      "group": "Collection styles",
+      "mainBytes": 2311
+    },
+    {
+      "route": "#/collection/mens-rings?style=bezel-edge",
+      "file": "collection-mens-rings-bezel-edge.html",
+      "label": "Men’s rings · Bezel edge",
+      "group": "Collection styles",
+      "mainBytes": 2326
+    },
+    {
+      "route": "#/collection/diamonds?shape=Round",
+      "file": "collection-diamonds-shape-round.html",
+      "label": "Lab-grown diamonds · Round",
+      "group": "Shapes",
+      "mainBytes": 19199
+    },
+    {
+      "route": "#/collection/diamonds?shape=Oval",
+      "file": "collection-diamonds-shape-oval.html",
+      "label": "Lab-grown diamonds · Oval",
+      "group": "Shapes",
+      "mainBytes": 19190
+    },
+    {
+      "route": "#/collection/diamonds?shape=Radiant",
+      "file": "collection-diamonds-shape-radiant.html",
+      "label": "Lab-grown diamonds · Radiant",
+      "group": "Shapes",
+      "mainBytes": 19217
+    },
+    {
+      "route": "#/collection/diamonds?shape=Emerald",
+      "file": "collection-diamonds-shape-emerald.html",
+      "label": "Lab-grown diamonds · Emerald",
+      "group": "Shapes",
+      "mainBytes": 19215
+    },
+    {
+      "route": "#/collection/diamonds?shape=Cushion",
+      "file": "collection-diamonds-shape-cushion.html",
+      "label": "Lab-grown diamonds · Cushion",
+      "group": "Shapes",
+      "mainBytes": 19220
+    },
+    {
+      "route": "#/collection/diamonds?shape=Pear",
+      "file": "collection-diamonds-shape-pear.html",
+      "label": "Lab-grown diamonds · Pear",
+      "group": "Shapes",
+      "mainBytes": 19192
+    },
+    {
+      "route": "#/collection/diamonds?shape=Princess",
+      "file": "collection-diamonds-shape-princess.html",
+      "label": "Lab-grown diamonds · Princess",
+      "group": "Shapes",
+      "mainBytes": 19228
+    },
+    {
+      "route": "#/collection/diamonds?shape=Marquise",
+      "file": "collection-diamonds-shape-marquise.html",
+      "label": "Lab-grown diamonds · Marquise",
+      "group": "Shapes",
+      "mainBytes": 19224
+    },
+    {
+      "route": "#/collection/diamonds?shape=Asscher",
+      "file": "collection-diamonds-shape-asscher.html",
+      "label": "Lab-grown diamonds · Asscher",
+      "group": "Shapes",
+      "mainBytes": 19213
+    },
+    {
+      "route": "#/collection/diamonds?shape=Heart",
+      "file": "collection-diamonds-shape-heart.html",
+      "label": "Lab-grown diamonds · Heart",
+      "group": "Shapes",
+      "mainBytes": 19202
+    },
+    {
+      "route": "#/collection/engagement?shape=Round",
+      "file": "collection-engagement-shape-round.html",
+      "label": "Engagement rings · Round",
+      "group": "Shapes",
+      "mainBytes": 95452
+    },
+    {
+      "route": "#/collection/engagement?shape=Oval",
+      "file": "collection-engagement-shape-oval.html",
+      "label": "Engagement rings · Oval",
+      "group": "Shapes",
+      "mainBytes": 88184
+    },
+    {
+      "route": "#/collection/engagement?shape=Radiant",
+      "file": "collection-engagement-shape-radiant.html",
+      "label": "Engagement rings · Radiant",
+      "group": "Shapes",
+      "mainBytes": 85154
+    },
+    {
+      "route": "#/collection/engagement?shape=Emerald",
+      "file": "collection-engagement-shape-emerald.html",
+      "label": "Engagement rings · Emerald",
+      "group": "Shapes",
+      "mainBytes": 86851
+    },
+    {
+      "route": "#/collection/engagement?shape=Cushion",
+      "file": "collection-engagement-shape-cushion.html",
+      "label": "Engagement rings · Cushion",
+      "group": "Shapes",
+      "mainBytes": 86834
+    },
+    {
+      "route": "#/collection/engagement?shape=Pear",
+      "file": "collection-engagement-shape-pear.html",
+      "label": "Engagement rings · Pear",
+      "group": "Shapes",
+      "mainBytes": 88446
+    },
+    {
+      "route": "#/collection/engagement?shape=Princess",
+      "file": "collection-engagement-shape-princess.html",
+      "label": "Engagement rings · Princess",
+      "group": "Shapes",
+      "mainBytes": 85168
+    },
+    {
+      "route": "#/collection/engagement?shape=Marquise",
+      "file": "collection-engagement-shape-marquise.html",
+      "label": "Engagement rings · Marquise",
+      "group": "Shapes",
+      "mainBytes": 86818
+    },
+    {
+      "route": "#/collection/engagement?shape=Asscher",
+      "file": "collection-engagement-shape-asscher.html",
+      "label": "Engagement rings · Asscher",
+      "group": "Shapes",
+      "mainBytes": 85122
+    },
+    {
+      "route": "#/collection/engagement?shape=Heart",
+      "file": "collection-engagement-shape-heart.html",
+      "label": "Engagement rings · Heart",
+      "group": "Shapes",
+      "mainBytes": 83555
+    },
+    {
+      "route": "#/collection/wedding?shape=Round",
+      "file": "collection-wedding-shape-round.html",
+      "label": "Wedding bands · Round",
+      "group": "Shapes",
+      "mainBytes": 81694
+    },
+    {
+      "route": "#/collection/wedding?shape=Oval",
+      "file": "collection-wedding-shape-oval.html",
+      "label": "Wedding bands · Oval",
+      "group": "Shapes",
+      "mainBytes": 81687
+    },
+    {
+      "route": "#/collection/wedding?shape=Radiant",
+      "file": "collection-wedding-shape-radiant.html",
+      "label": "Wedding bands · Radiant",
+      "group": "Shapes",
+      "mainBytes": 81708
+    },
+    {
+      "route": "#/collection/wedding?shape=Emerald",
+      "file": "collection-wedding-shape-emerald.html",
+      "label": "Wedding bands · Emerald",
+      "group": "Shapes",
+      "mainBytes": 83218
+    },
+    {
+      "route": "#/collection/wedding?shape=Cushion",
+      "file": "collection-wedding-shape-cushion.html",
+      "label": "Wedding bands · Cushion",
+      "group": "Shapes",
+      "mainBytes": 81708
+    },
+    {
+      "route": "#/collection/wedding?shape=Pear",
+      "file": "collection-wedding-shape-pear.html",
+      "label": "Wedding bands · Pear",
+      "group": "Shapes",
+      "mainBytes": 81687
+    },
+    {
+      "route": "#/collection/wedding?shape=Princess",
+      "file": "collection-wedding-shape-princess.html",
+      "label": "Wedding bands · Princess",
+      "group": "Shapes",
+      "mainBytes": 81715
+    },
+    {
+      "route": "#/collection/wedding?shape=Marquise",
+      "file": "collection-wedding-shape-marquise.html",
+      "label": "Wedding bands · Marquise",
+      "group": "Shapes",
+      "mainBytes": 81715
+    },
+    {
+      "route": "#/collection/wedding?shape=Asscher",
+      "file": "collection-wedding-shape-asscher.html",
+      "label": "Wedding bands · Asscher",
+      "group": "Shapes",
+      "mainBytes": 81708
+    },
+    {
+      "route": "#/collection/wedding?shape=Heart",
+      "file": "collection-wedding-shape-heart.html",
+      "label": "Wedding bands · Heart",
+      "group": "Shapes",
+      "mainBytes": 81694
+    },
+    {
+      "route": "#/diamond-type/natural",
+      "file": "diamond-type-natural.html",
+      "label": "Natural diamonds",
+      "group": "Diamond types",
+      "mainBytes": 692
+    },
+    {
+      "route": "#/diamond-type/fancy-color",
+      "file": "diamond-type-fancy-color.html",
+      "label": "Fancy-color diamonds",
+      "group": "Diamond types",
+      "mainBytes": 884
+    },
+    {
+      "route": "#/antique-shapes",
+      "file": "antique-shapes.html",
+      "label": "Antique-inspired shapes",
+      "group": "Diamond types",
+      "mainBytes": 2641
+    },
+    {
+      "route": "#/product/ring-3ef64319",
+      "file": "product-ring-3ef64319-two-tone-cushion-solitaire.html",
+      "label": "Two-Tone Cushion Solitaire",
+      "group": "Products",
+      "mainBytes": 6780
+    },
+    {
+      "route": "#/product/ring-ac57b8cb",
+      "file": "product-ring-ac57b8cb-pear-bezel-solitaire.html",
+      "label": "Pear Bezel Solitaire",
+      "group": "Products",
+      "mainBytes": 6739
+    },
+    {
+      "route": "#/product/ring-d5e49713",
+      "file": "product-ring-d5e49713-marquise-trio-ring.html",
+      "label": "Marquise Trio Ring",
+      "group": "Products",
+      "mainBytes": 6704
+    },
+    {
+      "route": "#/product/ring-fba44158",
+      "file": "product-ring-fba44158-pear-trio-ring.html",
+      "label": "Pear Trio Ring",
+      "group": "Products",
+      "mainBytes": 6688
+    },
+    {
+      "route": "#/product/ring-b2de204e",
+      "file": "product-ring-b2de204e-oval-bezel-solitaire.html",
+      "label": "Oval Bezel Solitaire",
+      "group": "Products",
+      "mainBytes": 6714
+    },
+    {
+      "route": "#/product/ring-d3827c85",
+      "file": "product-ring-d3827c85-round-blue-solitaire.html",
+      "label": "Round Blue Solitaire",
+      "group": "Products",
+      "mainBytes": 6739
+    },
+    {
+      "route": "#/product/ring-17463b89",
+      "file": "product-ring-17463b89-sunburst-pear-ring.html",
+      "label": "Sunburst Pear Ring",
+      "group": "Products",
+      "mainBytes": 6709
+    },
+    {
+      "route": "#/product/ring-1d311262",
+      "file": "product-ring-1d311262-emerald-halo-solitaire.html",
+      "label": "Emerald Halo Solitaire",
+      "group": "Products",
+      "mainBytes": 6756
+    },
+    {
+      "route": "#/product/ring-30fc2353",
+      "file": "product-ring-30fc2353-emerald-step-solitaire.html",
+      "label": "Emerald Step Solitaire",
+      "group": "Products",
+      "mainBytes": 6763
+    },
+    {
+      "route": "#/product/ring-b048743b",
+      "file": "product-ring-b048743b-round-halo-ring.html",
+      "label": "Round Halo Ring",
+      "group": "Products",
+      "mainBytes": 6778
+    },
+    {
+      "route": "#/product/ring-8e899f7e",
+      "file": "product-ring-8e899f7e-radiant-solitaire-pave-ring.html",
+      "label": "Radiant Solitaire Pavé Ring",
+      "group": "Products",
+      "mainBytes": 6820
+    },
+    {
+      "route": "#/product/ring-250364c1",
+      "file": "product-ring-250364c1-facet-bezel-ring.html",
+      "label": "Facet Bezel Ring",
+      "group": "Products",
+      "mainBytes": 6709
+    },
+    {
+      "route": "#/product/ring-2bb4d59b",
+      "file": "product-ring-2bb4d59b-classic-three-stone-ring.html",
+      "label": "Classic Three-Stone Ring",
+      "group": "Products",
+      "mainBytes": 6777
+    },
+    {
+      "route": "#/product/ring-a398943e",
+      "file": "product-ring-a398943e-crossover-halo-ring.html",
+      "label": "Crossover Halo Ring",
+      "group": "Products",
+      "mainBytes": 6775
+    },
+    {
+      "route": "#/product/ring-e2fff17c",
+      "file": "product-ring-e2fff17c-round-trio-ring.html",
+      "label": "Round Trio Ring",
+      "group": "Products",
+      "mainBytes": 6721
+    },
+    {
+      "route": "#/product/ring-e1cf471b",
+      "file": "product-ring-e1cf471b-asymmetrical-diamond-cluster.html",
+      "label": "Asymmetrical Diamond Cluster",
+      "group": "Products",
+      "mainBytes": 6815
+    },
+    {
+      "route": "#/product/ring-61dfa7df",
+      "file": "product-ring-61dfa7df-gold-baguette-eternity-ring.html",
+      "label": "Gold Baguette Eternity Ring",
+      "group": "Products",
+      "mainBytes": 3593
+    },
+    {
+      "route": "#/product/ring-86fd8726",
+      "file": "product-ring-86fd8726-graduated-brilliant-ring.html",
+      "label": "Graduated Brilliant Ring",
+      "group": "Products",
+      "mainBytes": 6896
+    },
+    {
+      "route": "#/product/ring-8fa21ba7",
+      "file": "product-ring-8fa21ba7-satin-edge-band.html",
+      "label": "Satin Edge Band",
+      "group": "Products",
+      "mainBytes": 3445
+    },
+    {
+      "route": "#/product/ring-3eedc992",
+      "file": "product-ring-3eedc992-oval-pave-solitaire.html",
+      "label": "Oval Pavé Solitaire",
+      "group": "Products",
+      "mainBytes": 6738
+    },
+    {
+      "route": "#/product/ring-235be9f4",
+      "file": "product-ring-235be9f4-blush-trillion-trio-ring.html",
+      "label": "Blush Trillion Trio Ring",
+      "group": "Products",
+      "mainBytes": 6821
+    },
+    {
+      "route": "#/product/ring-bf9d2489",
+      "file": "product-ring-bf9d2489-luminara-solitaire.html",
+      "label": "Luminara Solitaire",
+      "group": "Products",
+      "mainBytes": 6716
+    },
+    {
+      "route": "#/product/ring-32a10e20",
+      "file": "product-ring-32a10e20-classic-three-stone-ring.html",
+      "label": "Classic Three-Stone Ring",
+      "group": "Products",
+      "mainBytes": 6813
+    },
+    {
+      "route": "#/product/ring-3fccae06",
+      "file": "product-ring-3fccae06-marquise-bypass-ring.html",
+      "label": "Marquise Bypass Ring",
+      "group": "Products",
+      "mainBytes": 7113
+    },
+    {
+      "route": "#/product/ring-63de8c02",
+      "file": "product-ring-63de8c02-blush-halo-cocktail-ring.html",
+      "label": "Blush Halo Cocktail Ring",
+      "group": "Products",
+      "mainBytes": 7587
+    },
+    {
+      "route": "#/product/d1",
+      "file": "product-d1-2-09-carat-d-vvs2-radiant-lab-diamond.html",
+      "label": "2.09 Carat D-VVS2 Radiant Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5870
+    },
+    {
+      "route": "#/product/d2",
+      "file": "product-d2-1-63-carat-d-vvs2-round-lab-diamond.html",
+      "label": "1.63 Carat D-VVS2 Round Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5854
+    },
+    {
+      "route": "#/product/d3",
+      "file": "product-d3-2-85-carat-d-vvs2-oval-lab-diamond.html",
+      "label": "2.85 Carat D-VVS2 Oval Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5848
+    },
+    {
+      "route": "#/product/d4",
+      "file": "product-d4-3-02-carat-f-vs1-emerald-lab-diamond.html",
+      "label": "3.02 Carat F VS1 Emerald Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5867
+    },
+    {
+      "route": "#/product/d5",
+      "file": "product-d5-12-64-carat-e-vs1-cushion-lab-diamond.html",
+      "label": "12.64 Carat E-VS1 Cushion Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5868
+    },
+    {
+      "route": "#/product/d6",
+      "file": "product-d6-4-51-carat-d-vvs2-pear-lab-diamond.html",
+      "label": "4.51 Carat D-VVS2 Pear Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5850
+    },
+    {
+      "route": "#/product/d7",
+      "file": "product-d7-5-33-carat-d-vvs1-princess-lab-diamond.html",
+      "label": "5.33 Carat D-VVS1 Princess Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5878
+    },
+    {
+      "route": "#/product/d8",
+      "file": "product-d8-1-50-carat-g-vs2-marquise-lab-diamond.html",
+      "label": "1.50 Carat G VS2 Marquise Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5869
+    },
+    {
+      "route": "#/product/d9",
+      "file": "product-d9-2-08-carat-f-vs1-asscher-lab-diamond.html",
+      "label": "2.08 Carat F-VS1 Asscher Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5861
+    },
+    {
+      "route": "#/product/d10",
+      "file": "product-d10-2-99-carat-e-vs1-heart-lab-diamond.html",
+      "label": "2.99 Carat E-VS1 Heart Lab Diamond",
+      "group": "Products",
+      "mainBytes": 5858
+    },
+    {
+      "route": "#/education",
+      "file": "education.html",
+      "label": "Education home",
+      "group": "Education",
+      "mainBytes": 7335
+    },
+    {
+      "route": "#/education?topic=Cut",
+      "file": "education-studio-cut.html",
+      "label": "Cut · Interactive studio",
+      "group": "Education",
+      "mainBytes": 7335
+    },
+    {
+      "route": "#/education?topic=Color",
+      "file": "education-studio-color.html",
+      "label": "Color · Interactive studio",
+      "group": "Education",
+      "mainBytes": 9312
+    },
+    {
+      "route": "#/education?topic=Clarity",
+      "file": "education-studio-clarity.html",
+      "label": "Clarity · Interactive studio",
+      "group": "Education",
+      "mainBytes": 9928
+    },
+    {
+      "route": "#/education?topic=Carat",
+      "file": "education-studio-carat.html",
+      "label": "Carat · Interactive studio",
+      "group": "Education",
+      "mainBytes": 8898
+    },
+    {
+      "route": "#/education/cut",
+      "file": "education-cut.html",
+      "label": "Diamond cut. The art behind the light.",
+      "group": "Education",
+      "mainBytes": 6762
+    },
+    {
+      "route": "#/education/color",
+      "file": "education-color.html",
+      "label": "Diamond color. Find your kind of white.",
+      "group": "Education",
+      "mainBytes": 7272
+    },
+    {
+      "route": "#/education/clarity",
+      "file": "education-clarity.html",
+      "label": "Diamond clarity. Look closer, choose clearly.",
+      "group": "Education",
+      "mainBytes": 7092
+    },
+    {
+      "route": "#/education/carat",
+      "file": "education-carat.html",
+      "label": "Diamond carat. Weight is only the beginning.",
+      "group": "Education",
+      "mainBytes": 6859
+    },
+    {
+      "route": "#/education/shapes",
+      "file": "education-shapes.html",
+      "label": "Find your shape.",
+      "group": "Education",
+      "mainBytes": 3827
+    },
+    {
+      "route": "#/education/engagement",
+      "file": "education-engagement.html",
+      "label": "A ring with your point of view.",
+      "group": "Education",
+      "mainBytes": 3841
+    },
+    {
+      "route": "#/education/wedding",
+      "file": "education-wedding.html",
+      "label": "Made for your every day.",
+      "group": "Education",
+      "mainBytes": 3998
+    },
+    {
+      "route": "#/education/metals",
+      "file": "education-metals.html",
+      "label": "The metal sets the mood.",
+      "group": "Education",
+      "mainBytes": 3906
+    },
+    {
+      "route": "#/education/sizing",
+      "file": "education-sizing.html",
+      "label": "A fit worth getting right.",
+      "group": "Education",
+      "mainBytes": 3523
+    },
+    {
+      "route": "#/education/care",
+      "file": "education-care.html",
+      "label": "Keep the light in it.",
+      "group": "Education",
+      "mainBytes": 3984
+    },
+    {
+      "route": "#/education/reports",
+      "file": "education-reports.html",
+      "label": "Know what you are choosing.",
+      "group": "Education",
+      "mainBytes": 4285
+    },
+    {
+      "route": "#/education/jewelry",
+      "file": "education-jewelry.html",
+      "label": "Build your jewelry wardrobe.",
+      "group": "Education",
+      "mainBytes": 4047
+    },
+    {
+      "route": "#/education/compare",
+      "file": "education-compare.html",
+      "label": "Natural vs. lab-grown",
+      "group": "Education",
+      "mainBytes": 7506
+    },
+    {
+      "route": "#/policy/returns",
+      "file": "policy-returns.html",
+      "label": "Returns & exchanges",
+      "group": "Policies",
+      "mainBytes": 1456
+    },
+    {
+      "route": "#/policy/shipping",
+      "file": "policy-shipping.html",
+      "label": "Shipping & delivery",
+      "group": "Policies",
+      "mainBytes": 1160
+    },
+    {
+      "route": "#/policy/warranty",
+      "file": "policy-warranty.html",
+      "label": "Warranty & service",
+      "group": "Policies",
+      "mainBytes": 1105
+    },
+    {
+      "route": "#/policy/insurance",
+      "file": "policy-insurance.html",
+      "label": "Jewelry insurance",
+      "group": "Policies",
+      "mainBytes": 1118
+    },
+    {
+      "route": "#/policy/payments",
+      "file": "policy-payments.html",
+      "label": "Payment options",
+      "group": "Policies",
+      "mainBytes": 1132
+    },
+    {
+      "route": "#/policy/custom",
+      "file": "policy-custom.html",
+      "label": "Custom order policy",
+      "group": "Policies",
+      "mainBytes": 1449
+    },
+    {
+      "route": "#/policy/privacy",
+      "file": "policy-privacy.html",
+      "label": "Privacy",
+      "group": "Policies",
+      "mainBytes": 1295
+    },
+    {
+      "route": "#/policy/terms",
+      "file": "policy-terms.html",
+      "label": "Terms of service",
+      "group": "Policies",
+      "mainBytes": 1219
+    },
+    {
+      "route": "#/collection/diamonds?build=1",
+      "file": "build-choose-diamonds.html",
+      "label": "Choose a diamond",
+      "group": "Ring builder",
+      "mainBytes": 29121
+    },
+    {
+      "route": "#/collection/engagement?build=1",
+      "file": "build-choose-engagement.html",
+      "label": "Choose a setting",
+      "group": "Ring builder",
+      "mainBytes": 122861
+    },
+    {
+      "route": "#/builder",
+      "file": "builder.html",
+      "label": "Ring builder",
+      "group": "Ring builder",
+      "mainBytes": 2703
+    },
+    {
+      "route": "#/builder?step=setting",
+      "file": "builder-setting.html",
+      "label": "Choose a setting",
+      "group": "Ring builder",
+      "mainBytes": 122861
+    },
+    {
+      "route": "#/builder?step=review",
+      "file": "builder-review.html",
+      "label": "Review ring selections",
+      "group": "Ring builder",
+      "mainBytes": 2703
+    },
+    {
+      "route": "#/your-ring",
+      "file": "your-ring.html",
+      "label": "Your ring",
+      "group": "Ring builder",
+      "mainBytes": 2703
+    },
+    {
+      "route": "#/cart",
+      "file": "cart.html",
+      "label": "Cart",
+      "group": "Studio & shopping",
+      "mainBytes": 747
+    },
+    {
+      "route": "#/checkout",
+      "file": "checkout.html",
+      "label": "Preview checkout",
+      "group": "Studio & shopping",
+      "mainBytes": 1302
+    },
+    {
+      "route": "#/favorites",
+      "file": "favorites.html",
+      "label": "Saved favorites",
+      "group": "Studio & shopping",
+      "mainBytes": 374
+    },
+    {
+      "route": "#/custom",
+      "file": "custom.html",
+      "label": "Custom design",
+      "group": "Studio & shopping",
+      "mainBytes": 4972
+    },
+    {
+      "route": "#/faq",
+      "file": "faq.html",
+      "label": "Frequently asked questions",
+      "group": "Studio & shopping",
+      "mainBytes": 5624
+    },
+    {
+      "route": "#/journal",
+      "file": "journal.html",
+      "label": "Studio journal",
+      "group": "Studio & shopping",
+      "mainBytes": 1067
+    },
+    {
+      "route": "#/contact",
+      "file": "contact.html",
+      "label": "Contact",
+      "group": "Studio & shopping",
+      "mainBytes": 694
+    },
+    {
+      "route": "#/care",
+      "file": "care.html",
+      "label": "Jewelry care",
+      "group": "Studio & shopping",
+      "mainBytes": 1335
+    },
+    {
+      "route": "#/impact",
+      "file": "impact.html",
+      "label": "Impact",
+      "group": "Studio & shopping",
+      "mainBytes": 9955
+    },
+    {
+      "route": "#/review",
+      "file": "review.html",
+      "label": "Manager review",
+      "group": "Studio & shopping",
+      "mainBytes": 2838
+    }
+  ]
+}

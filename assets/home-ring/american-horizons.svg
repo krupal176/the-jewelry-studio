@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="320" viewBox="0 0 1600 320" fill="none">
+  <!-- Original decorative panorama inspired by American cities; not a geographic map. -->
+  <defs>
+    <linearGradient id="horizon-edges" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset=".055" stop-color="white"/>
+      <stop offset=".945" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="horizon-mask">
+      <path d="M0 0h1600v320H0z" fill="url(#horizon-edges)"/>
+    </mask>
+  </defs>
+  <g mask="url(#horizon-mask)" stroke="#E3D2BC" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <g class="west">
+      <!-- Pacific foothills and an open suspension span. -->
+      <g opacity=".35">
+        <path d="M0 240c22-7 30-25 51-25 18 0 22 13 41 11 21-2 29-18 46-19m227 16c19-8 28-27 49-28 24-1 39 29 62 33 22 4 34-2 53 8"/>
+        <path d="M0 251c30-10 54-10 77-5m302-6c26-6 42-4 61 3 24 9 54 7 86 7"/>
+      </g>
+      <g opacity=".78">
+        <path d="M78 221h360M77 226h364"/>
+        <path d="M160 249V127h17v122m140 0V127h17v122"/>
+        <path d="M164 127v-8h9v8m148 0v-8h9v8M160 144h17m-17 22h17m-17 26h17m140-48h17m-17 22h17m-17 26h17"/>
+        <path d="M87 218c31-18 54-47 73-91m17 0c26 61 52 77 70 77s45-16 70-77m17 0c27 48 53 76 94 93"/>
+        <path d="M103 208v13m17-28v28m17-47v47m17-71v71m36-65v65m19-35v35m19-21v21m19-17v17m19-21v21m19-36v36m19-67v67m43-66v66m20-38v38m20-20v20m20-7v7" opacity=".67"/>
+        <path d="M157 249h23m134 0h23M98 227v12m313-12v11"/>
+      </g>
+      <g opacity=".3">
+        <path d="M47 258h103m46 0h102m55 0h143M87 267h74m73 0h139m26 0h58M143 278h90m69 0h44"/>
+      </g>
+    </g>
+    <g class="central">
+      <!-- Lakefront architecture: a quiet mix of bundled towers and slender spires. -->
+      <g opacity=".32">
+        <path d="M553 250h30v-31h25v31m14 0v-49h27v49m213-5v-59h25v59m40 5v-31h29v31h37m-302-9v-69h25v69m81-5v-80h22v80"/>
+      </g>
+      <g opacity=".74">
+        <path d="M639 250v-59h32v59m-26-67h20v8m-16-8v-9h12v9M648 202v32m13-32v32"/>
+        <path d="M687 250V155h16v-42h23V99h26v40h18v111"/>
+        <path d="M732 99V72m14 27V80m-20 33v137m26-111v111m-49-95v95M709 127v14m0 14v14m0 14v14m0 14v23m30-121v19m0 14v19m0 14v19m0 14v26m21-70v24m0 14v30" opacity=".68"/>
+        <path d="M785 250v-73h37v73m-31-73v-12h25v12M794 190v43m19-43v43"/>
+        <path d="M839 250V153h7v-13h7v-17h9v17h7v13h7v97m-18-127v-18M847 169v61m21-61v61m-20-67h20"/>
+        <path d="M893 250v-48h32v48m-27-48v-10h22v10M902 213v22m14-22v22"/>
+        <path d="M594 250h49m22 0h25m77 0h21m31 0h23m32 0h22m27 0h61" opacity=".7"/>
+      </g>
+      <g opacity=".3">
+        <path d="M567 260h139m35 0h99m45 0h96M620 271h81m67 0h160M677 282h41m99 0h64"/>
+      </g>
+    </g>
+    <g class="east">
+      <!-- Restrained stepped silhouettes and an Art Deco crown. -->
+      <g opacity=".32">
+        <path d="M1057 250h26v-30h24v30m11-7v-55h29v55m-5-62v-10h14v10h9v63m181-2v-78h23v78m-14-78v-9h10v9m46 83v-42h25v42m13 3v-24h32v24h44"/>
+      </g>
+      <g opacity=".75">
+        <path d="M1091 250v-36h27v36m-20-26v12m13-12v12"/>
+        <path d="M1155 250v-52h7v-21h25v21h7v52m-26-73v-10h13v10M1166 208v27m16-27v27"/>
+        <path d="M1220 250v-53h9v-65h10v-22h10V93h8V75h7v18h8v17h10v22h10v65h9v53"/>
+        <path d="M1260.5 75V53m-20 79h42m-33-22h23m-15-17h7m-35 104h63m-53-54v90m14-90v90m15-90v90m14-90v90" opacity=".68"/>
+        <path d="M1316 250v-62h35v62m-28-62v-11h21v11M1325 201v34m17-34v34"/>
+        <path d="M1374 250v-66h8v-21l7-10v-13l10-12 10 12v13l7 10v21h8v66m-25-122v-23"/>
+        <path d="M1389 153q10-13 20 0m-27 16q17-21 34 0m-34 15h34m-28 12v38m11-44v44m11-38v38" opacity=".68"/>
+        <path d="M1441 250v-40h32v40m-25-40v-11h18v11M1450 222v15m14-15v15"/>
+        <path d="M1077 250h17m22 0h42m34 0h31m75 0h20m31 0h27m47 0h20m28 0h59" opacity=".7"/>
+      </g>
+      <g opacity=".3">
+        <path d="M1059 260h123m31 0h139m30 0h157M1113 271h81m47 0h108m69 0h72M1196 282h85m85 0h64"/>
+      </g>
+    </g>
+  </g>
+</svg>

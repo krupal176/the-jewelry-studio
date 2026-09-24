@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360" fill="none">
+  <!-- Original decorative architectural composition; not a geographic panorama. -->
+  <defs>
+    <linearGradient id="tone" x1="800" y1="46" x2="800" y2="352" gradientUnits="userSpaceOnUse"><stop stop-color="#B59BA4"/><stop offset=".4" stop-color="#A38A90"/><stop offset="1" stop-color="#967983"/></linearGradient>
+    <linearGradient id="fade" x1="800" y1="309" x2="800" y2="359" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity=".12"/></linearGradient>
+    <mask id="edge"><path fill="url(#fade)" d="M0 0h1600v360H0z"/></mask>
+    <pattern id="windows" width="10" height="12" patternUnits="userSpaceOnUse"><path d="M3 3h2v5H3z" fill="#D6BEC7" fill-opacity=".43"/></pattern>
+    <pattern id="tall" width="9" height="15" patternUnits="userSpaceOnUse"><path d="M3 2v9" stroke="#D6BEC7" stroke-opacity=".48" stroke-width="1.5"/></pattern>
+    <pattern id="glass" width="16" height="20" patternUnits="userSpaceOnUse"><path d="M0 0h16v20M8 0v20M0 10h16" stroke="#D6BEC7" stroke-opacity=".36" stroke-width=".65"/><path d="M1 1h6v8H1zM9 11h6v8H9z" fill="#D6BEC7" fill-opacity=".12"/></pattern>
+    <pattern id="brick" width="17" height="19" patternUnits="userSpaceOnUse"><path d="M5 4h5v9H5z" fill="#2B0D16" fill-opacity=".44"/><path d="M4 14h7M5 4h5" stroke="#CEB4BF" stroke-opacity=".45" stroke-width=".7"/></pattern>
+    <g id="mid"><path d="M0 320V207h7v-10h28v10h7v113z" fill="#A38A90"/><path d="M5 213h32v107H5z" fill="url(#windows)"/><path d="M1 207h40M5 214v103m31-103v103" stroke="#C8AEBB" stroke-opacity=".4"/></g>
+    <g id="block"><path d="M0 344v-67h36v67z" fill="#A38A90"/><path d="M27 278h9v66h-9z" fill="#2B0D16" opacity=".16"/><path d="M4 283h28v58H4z" fill="url(#brick)"/><path d="M0 277h36m-36 6h36M1 309h33M1 329h33" stroke="#C3A4B2" stroke-opacity=".7"/><path d="M2 285v56M33 285v56" stroke="#D6BEC7" stroke-width=".6" stroke-opacity=".36"/><path d="M21 277v-11h7v11z" fill="#A38A90"/></g>
+    <g id="tank"><path d="M0 0v-14l8-4 8 4V0z" fill="#AC8C9C" stroke="#C9A8B8" stroke-width=".7"/><path d="m2 0-2 7m14-7 2 7" stroke="#A38A90" stroke-width="1.2"/></g>
+  </defs>
+  <g mask="url(#edge)">
+    <path fill="#A38A90" opacity=".22" d="M0 285h16v-22h21v-15h30v24h20v-42h29v-20h23v-14h14v14h15v-9h28v25h18v-46h34v-14h22v14h9v52h26v-39h31v-29h29v-18h21v18h15v31h18v-8h21v33h26v-57h38v-38h19v-11h11v11h11v38h18v59h28v-34h29v-13h29v55h24v-70h17v-50h10v-12h8v12h9v50h11v70h20v-97h32v-20h17v20h21v72h29v-12h24v40h22v-25h22v-69h26v-23h25v23h22v51h33v-24h39v-17h15v17h18v69h33v-84h33v-40h11v-20h8v20h11v40h18v65h33v-18h31v-41h44v47h28v-84h29v-18h28v18h18v67h21v-22h23v49h29v-33h27v-35h15v-22h13v22h15v35h19v41h24v-61h35v-12h20v12h22v27h26v-56h32v43h30v21h39v-38h24v-25h25v25h11v63h34v-19h28v44h30v-25h38v52H0z"/>
+    <g opacity=".42"><use href="#mid" x="62"/><use href="#mid" transform="translate(146 -45) scale(1 1.14)"/><use href="#mid" x="219"/><use href="#mid" transform="translate(280 -80) scale(.8 1.25)"/><use href="#mid" x="445"/><use href="#mid" transform="translate(493 -115) scale(1.2 1.36)"/><use href="#mid" x="554"/><use href="#mid" x="674"/><use href="#mid" transform="translate(739 -50) scale(1 1.15)"/><use href="#mid" x="786"/><use href="#mid" x="955"/><use href="#mid" transform="translate(1000 -78) scale(.8 1.24)"/><use href="#mid" x="1127"/><use href="#mid" transform="translate(1180 -110) scale(1.2 1.34)"/><use href="#mid" x="1270"/><use href="#mid" x="1371"/><use href="#mid" x="1450"/></g>
+    <!-- One World Trade Center: tapered glass planes and antenna. -->
+    <g>
+      <path d="M377 34v38m0-49v9" stroke="#CBB0BD" stroke-width="1.15"/><path d="M375 71h4l2 19h-8zM371 88h13v16h-13z" fill="#A38A90"/>
+      <path d="M360 101h35l20 214h-75z" fill="url(#tone)"/><path d="m360 101 17 8 38 206h-34z" fill="#D1B7C2" fill-opacity=".16"/><path d="m395 101-18 8-37 206h41z" fill="#63424E" fill-opacity=".26"/><path d="M360 101h35l20 214h-75z" fill="url(#glass)"/>
+      <path d="m360 101 21 214m14-214-14 214m-4-206v204M360 101h35M349 212h56M345 262h64" stroke="#D6BEC7" stroke-opacity=".57" stroke-width=".85"/><path d="M349 313h67v14h-67z" fill="#A38A90"/>
+    </g>
+    <g fill="url(#tone)">
+      <path d="M192 321V237h6v-14h31v14h8v84zM250 323V172h9v-18h8v-16h9v16h8v18h9v151zM265 138h14l-7-20z"/><path d="M272 119v-17" stroke="#C7ACBA"/>
+      <path d="M197 240h34v81h-34zM256 178h31v145h-31z" fill="url(#tall)"/><path d="M259 173v150m25-150v150M253 187h38M253 233h38" stroke="#D0B4C1" stroke-opacity=".6" stroke-width=".8"/>
+      <path d="M429 323V242h5v-5h43v5h6v81zM512 327V212h9v-10h33v10h8v115z"/><path d="M435 247h42v76h-42zM519 217h36v110h-36z" fill="url(#windows)"/>
+    </g>
+    <g>
+      <path d="M583 326V205h10v-28h10v-24h12v-18h26v18h12v24h10v28h10v121zM616 135v-19h23v19z" fill="#A38A90"/><path d="M627 116V97" stroke="#C0A4B2" stroke-width="1.2"/>
+      <path d="M593 206h70v120h-70zM603 178h50v28h-50zM615 153h26v25h-26z" fill="url(#tall)"/><path d="M594 202h68m-59-28h50m-39-25h28m-27-16h26m-39 46v144m53-144v144m-40-168v168m26-168v168" stroke="#C7ACBA" stroke-opacity=".57"/>
+    </g>
+    <!-- Empire State Building: stepped limestone setbacks and mast. -->
+    <g>
+      <path d="M879 17v33" stroke="#D3B8C5" stroke-width="1.2"/><path d="M877 47h4v13h-4z" fill="#C0A3B2"/>
+      <path d="M875 58h8v17h-8zM871 73h16v20h-16zM866 91h26v18h-26zM858 107h42v26h-42zM849 131h60v146h-60zM840 275h78v52h-78z" fill="url(#tone)"/>
+      <path d="M849 133h60v143h-60zM840 277h78v50h-78z" fill="url(#tall)"/><path d="M858 111h42v20h-42z" fill="url(#windows)"/>
+      <path d="M875 61v31m8-17v17m-12-17v17m-1 21v17m18-17v17m-35 5v139m52-139v139m-42-139v139m32-139v139m-22-139v139m12-139v139M872 75h14M867 94h24M859 109h40M850 133h58M850 145h58M850 239h58M841 277h76" stroke="#D6BEC7" stroke-opacity=".68" stroke-width=".8"/>
+      <path d="M850 134h6v141h-6zM903 134h6v141h-6zM841 279h7v48h-7zM911 279h7v48h-7z" fill="#65404F" fill-opacity=".43"/>
+    </g>
+    <!-- Chrysler Building: arched Art Deco crown and triangular apertures. -->
+    <g>
+      <path d="M1073 57v32" stroke="#D2B7C4" stroke-width="1.15"/><path d="m1073 84 4 22h-8z" fill="#C5A8B8"/>
+      <path d="M1073 104c-3 9-9 15-12 20v8c-6 6-9 12-11 18v11l-7 9v26h-8v23h-9v108h94V219h-9v-23h-8v-26l-7-9v-11c-2-6-5-12-11-18v-8c-3-5-9-11-12-20Z" fill="url(#tone)"/>
+      <path d="M1035 221h76v106h-76zM1044 198h58v23h-58zM1052 174h42v24h-42z" fill="url(#tall)"/>
+      <g stroke="#D8BEC9" stroke-opacity=".76"><path d="M1061 132q12-22 24 0m-35 21q23-34 46 0m-53 22q30-42 60 0m-59 20q29-42 58 0"/><path d="M1073 108v87m-23-22 23 22 23-22m-38-18 15 18 15-18m-22-19 7 11 7-11M1044 197h58M1036 219h74M1028 232h90M1035 244h76M1034 310h78"/></g>
+      <path d="m1067 130 4-9v10zM1075 131v-10l4 9zM1058 153l5-10 3 11zM1069 152l4-11 4 11zM1080 154l3-11 5 10zM1050 176l5-10 4 12zM1061 174l5-13 4 15zM1076 176l4-15 5 13zM1087 178l4-12 5 10z" fill="#553241" opacity=".7"/>
+      <path d="m1036 216-9-7-4 1 7 12h6m74-6 9-7 4 1-7 12h-6" fill="#B79AA8"/><path d="M1030 233v92m85-92v92m-68-102v102m51-102v102" stroke="#C7A8B8" stroke-opacity=".51" stroke-width="1.2"/>
+    </g>
+    <g fill="#A38A90"><path d="M699 326V224l45-14v116zM925 326V171h36v155zM1239 327V186h42v141zM1324 329V231h7v-44h21v44h7v98z"/><path d="M706 225h31v101h-31zM929 175h28v151h-28zM1243 191h34v136h-34zM1329 235h25v94h-25z" fill="url(#glass)"/><path d="M925 172h36m-31 0v154m26-154v154M1240 187h40m-33 0v140m25-140v140M1330 232h24M1335 187h14v-7h-14" stroke="#C7ABB9" stroke-opacity=".5"/></g>
+    <g><use href="#block" x="0" y="18"/><use href="#block" x="35" y="7"/><use href="#block" x="71" y="0"/><use href="#block" x="106" y="12"/><use href="#block" x="142" y="-17"/><use href="#block" x="178"/><use href="#block" x="214" y="10"/><use href="#block" x="250" y="-3"/><use href="#block" x="286" y="17"/><use href="#block" x="322"/><use href="#block" x="358" y="-4"/><use href="#block" x="394" y="20"/><use href="#block" x="430" y="7"/><use href="#block" x="466" y="20"/><use href="#block" x="502" y="-12"/><use href="#block" x="538" y="7"/><use href="#block" x="574" y="20"/><use href="#block" x="610"/><use href="#block" x="646" y="-19"/><use href="#block" x="682" y="3"/><use href="#block" x="718" y="19"/><use href="#block" x="754" y="10"/><use href="#block" x="790" y="-4"/><use href="#block" x="826" y="12"/><use href="#block" x="862"/><use href="#block" x="898" y="20"/><use href="#block" x="934" y="-12"/><use href="#block" x="970" y="8"/><use href="#block" x="1006"/><use href="#block" x="1042" y="-25"/><use href="#block" x="1078" y="3"/><use href="#block" x="1114" y="20"/><use href="#block" x="1150"/><use href="#block" x="1186" y="-24"/><use href="#block" x="1222" y="0"/><use href="#block" x="1258" y="20"/><use href="#block" x="1294" y="-7"/><use href="#block" x="1330" y="-22"/><use href="#block" x="1366" y="8"/><use href="#block" x="1402"/><use href="#block" x="1438" y="20"/><use href="#block" x="1474"/><use href="#block" x="1510" y="18"/><use href="#block" x="1546" y="-12"/><use href="#block" x="1582" y="8"/>
+      <use href="#tank" x="151" y="253"/><use href="#tank" x="653" y="251"/><use href="#tank" x="1053" y="245"/><use href="#tank" x="1555" y="258"/>
+    </g>
+    <path d="M0 341h1600M0 346h1600" stroke="#B38B9E" stroke-opacity=".31" stroke-width=".8"/>
+  </g>
+</svg>

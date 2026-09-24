@@ -1,0 +1,50 @@
+/* Owner-approved announcement and contact controls. The menu shell stays shared. */
+.studio-announcements{min-height:36px;display:flex;align-items:center;justify-content:center;gap:12px;padding:0 5%;background:var(--wine);color:var(--ivory);font:11px/1.5 var(--sans)}
+.announcement-message{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:36px;width:min(610px,100%);margin:0;color:inherit}
+.announcement-message [data-announcement-link]{color:inherit;font-size:10px;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;padding:5px 0}
+.announcement-control{color:inherit;display:grid;place-items:center;flex:0 0 28px;width:28px;height:32px;padding:0;opacity:.82}
+.announcement-control:hover{opacity:1}
+.announcement-control svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.4}
+.studio-announcements :focus-visible{outline:1px solid var(--ivory);outline-offset:2px}
+.announcement-message.is-changing{animation:announcement-in .35s ease-out}
+@keyframes announcement-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.header{--header-ink:var(--wine)}
+.header.is-scrolled{background:rgba(247,241,232,.28);border-bottom-color:rgba(90,27,42,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.header.is-scrolled.is-over-dark{--header-ink:var(--ivory);background:rgba(37,10,20,.14);border-bottom-color:rgba(247,241,232,.16)}
+.header .wordmark,.header .header-actions>.icon,.header .mobile-menu,.header .nav-trigger>a,.header .nav-direct>a,.header .menu-toggle,.header-contact>summary,.mobile-contact-button{color:var(--header-ink)}
+.header .wordmark,.header .header-actions>.icon,.header .nav-trigger>a,.header .nav-direct>a{transition:color .25s ease}
+.header .nav-trigger>a:after,.header .nav-direct>a:after{background:var(--header-ink)}
+.header:has(.nav-item.expanded),.header:has(.header-contact[open]),.header:has(.nav.open){--header-ink:var(--wine);background:var(--ivory);border-bottom-color:var(--line)}
+.header-contact{position:relative;justify-self:start;color:var(--wine);z-index:2;margin:0;padding:0;border:0}
+.header-contact>summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font:10px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.header-contact>summary::-webkit-details-marker{display:none}
+.header-contact>summary{padding:0;border:0}
+.header-contact>summary:after{display:none}
+.header-contact>summary>svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1}
+.header-contact>summary>.contact-chevron{width:10px;height:10px;transition:transform .2s}
+.header-contact[open]>summary>.contact-chevron{transform:rotate(180deg)}
+.contact-menu{position:absolute;left:0;top:calc(100% + 3px);width:248px;padding:16px 21px;background:var(--ivory);border:1px solid var(--line);box-shadow:0 16px 30px #2b0d1614}
+.contact-menu a,.contact-menu button{display:block;width:100%;padding:11px 0;text-align:left;color:var(--wine);font:11px/1.5 var(--sans);text-decoration:none}
+.contact-menu a:hover,.contact-menu button:hover{text-decoration:underline;text-underline-offset:4px}
+.contact-menu a:focus-visible,.contact-menu button:focus-visible{outline:1px solid var(--wine);outline-offset:3px}
+.contact-menu .contact-primary{border-bottom:1px solid var(--line);margin-bottom:6px;padding-bottom:16px}
+.contact-menu small{display:block;margin:9px 0 4px;color:var(--muted);font:10px/1.6 var(--sans)}
+.contact-panel-links{display:grid;gap:4px;margin:20px 0}
+.contact-panel-links a,.contact-panel-links button{padding:12px 0;color:var(--wine);text-align:left;border-bottom:1px solid var(--line)}
+.nav .mobile-contact-entry{display:none}
+.promo-code{display:inline-block;border:1px solid var(--line);padding:12px 25px;margin:5px 0 15px;font:500 20px/1.4 var(--sans);letter-spacing:.12em;color:var(--wine)}
+@media(max-width:1000px){
+ .header-contact{display:none}
+ .nav .mobile-contact-entry{display:flex;align-items:center}
+ .mobile-contact-button{padding:12px 0;font:400 18px/1.2 var(--serif)}
+}
+@media(max-width:650px){
+ .studio-announcements{padding:3px 3%;gap:2px;min-height:43px;font-size:9px}
+ .announcement-message{min-height:37px;gap:2px;flex-direction:column;line-height:1.4}
+ .announcement-message [data-announcement-link]{font-size:8px;padding:0}
+ .announcement-control{width:25px;flex-basis:25px;min-height:36px}
+ .nav .mobile-contact-entry{min-height:49px;border-bottom:1px solid var(--line)}
+ .mobile-contact-button{width:100%;text-align:left;font-size:21px;padding:13px 0}
+}
+@media(prefers-reduced-motion:reduce){.announcement-message.is-changing{animation:none}.header .wordmark,.header .header-actions>.icon,.header .nav-trigger>a,.header .nav-direct>a{transition:none}}
+@media print{.studio-announcements{display:none!important}}

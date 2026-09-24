@@ -1,0 +1,8 @@
+/* Original Rose Ash skyline: quiet scroll-linked depth, always behind the links. */
+.site-footer{--skyline-rise:0px;--skyline-glow:.2;--skyline-light:85%;position:relative;isolation:isolate;overflow:hidden}
+.site-footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(180deg,#2b0d16 5%,#2b0d1680 48%,#2b0d1600 100%),url("assets/tjs-new-york-skyline.svg");background-position:center,center bottom;background-size:100% 100%,auto 96%;background-repeat:no-repeat;opacity:.43;transform:translateY(var(--skyline-rise))}
+.site-footer::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at var(--skyline-light) 85%,#ddc4bd 0%,#a38a9000 45%);mask:url("assets/tjs-new-york-skyline.svg") center bottom/auto 96% no-repeat;-webkit-mask:url("assets/tjs-new-york-skyline.svg") center bottom/auto 96% no-repeat;opacity:var(--skyline-glow);transform:translateY(var(--skyline-rise))}
+.site-footer p,.site-footer small,.site-footer .footer-links a,.site-footer .footer-bottom{color:#e3d3d8}
+@media(min-width:2200px){.site-footer::before{background-size:100% 100%,100% auto}.site-footer::after{mask-size:100% auto;-webkit-mask-size:100% auto}}
+@media(max-width:650px){.site-footer::before{background-size:100% 100%,auto 52%;opacity:.38}.site-footer::after{mask-size:auto 52%;-webkit-mask-size:auto 52%}}
+@media(prefers-reduced-motion:reduce){.site-footer::before,.site-footer::after{transform:none}.site-footer::after{opacity:.16;background:radial-gradient(ellipse at 80% 85%,#ddc4bd 0%,#a38a9000 45%)}}

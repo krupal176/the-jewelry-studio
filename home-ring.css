@@ -1,0 +1,86 @@
+/* Scroll-linked jewelry editorial. Decoration stays behind real links. */
+.home-ring-story{--ring-drop:20.5%;--ring-lift:-7%;--ring-progress:1;--ring-sheen:0;position:relative;background:var(--deep);color:var(--ivory)}
+.ring-story-sticky{position:relative;min-height:740px;display:flex;align-items:center;padding:70px 8%;overflow:clip;isolation:isolate;background:radial-gradient(ellipse at 73% 44%,#a38a906b 0%,#5a1b2a99 31%,var(--deep) 76%)}
+.ring-story-background{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.ring-light-halo{position:absolute;width:53%;aspect-ratio:1;right:1%;top:50%;border-radius:50%;background:radial-gradient(ellipse,#f7f1e828,transparent 65%);transform:translateY(-50%) scale(calc(.85 + var(--ring-progress)*.18));opacity:calc(.5 + var(--ring-progress)*.5)}
+.ring-light-arc{position:absolute;width:62%;aspect-ratio:1;right:-7%;top:50%;border:1px solid #a38a9033;border-radius:50%;transform:translateY(-50%) rotate(-24deg) scaleX(.77)}
+.ring-story-art{position:absolute;width:560px;aspect-ratio:2/3;right:7%;top:50%;transform:translateY(-50%);filter:drop-shadow(15px 30px 24px #15050b60)}
+.ring-art-frame{position:absolute;inset:0;transform-origin:50% 62%;transform:translateY(var(--ring-lift)) translateX(var(--ring-drift,0px)) rotate(var(--ring-turn,0deg)) scale(var(--ring-scale,1))}
+.ring-art-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.ring-art-setting{clip-path:inset(32% 0 0 0);filter:brightness(1.07) contrast(1.07)}
+.ring-art-diamond{clip-path:inset(0 0 68% 0);transform:translateY(var(--ring-drop));filter:none}
+.ring-art-prong{clip-path:polygon(47.6% 42%,52.2% 42%,53.4% 56.5%,46.8% 56.5%);filter:brightness(1.07) contrast(1.07)}
+.ring-art-glint{position:absolute;inset:0;transform:translateY(var(--ring-drop));opacity:calc(var(--ring-sheen) * .35);pointer-events:none}
+.ring-art-glint:before,.ring-art-glint:after{content:"";position:absolute;left:61%;top:12.5%;width:27px;height:1px;background:linear-gradient(90deg,transparent,#fff,transparent);box-shadow:0 0 6px #fff7}
+.ring-art-glint:after{transform:rotate(90deg)}
+.ring-art-glint-secondary:before,.ring-art-glint-secondary:after{left:33%;top:20%;width:15px}
+.ring-story-sticky:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--deep),#2b0d1690 28%,#2b0d1600 55%)}
+.ring-story-copy{width:43%;position:relative;z-index:1}
+.ring-story-copy .eyebrow{color:#d8c4c6;font-size:9px;letter-spacing:.23em;margin-bottom:30px}
+.home-ring-story h2{font-size:clamp(78px,9vw,138px);line-height:.95;margin:0 0 44px}
+.home-ring-story h2 em{color:#d5bdc2}
+.ring-story-actions{display:flex;align-items:flex-start;flex-direction:column;gap:24px}
+.ring-story-actions .button,.ring-story-actions .text-link{font-size:10px}
+.ring-story-actions .text-link{color:var(--ivory);border-color:#a38a90;gap:30px}
+.home-ring-story .ring-motion-toggle{position:absolute;right:28px;bottom:24px;z-index:2;color:var(--ivory);border-color:#a38a9070;background:#2b0d1666;font-size:13px}
+.home-ring-story .ring-motion-toggle:hover{background:var(--wine)}
+.home-ring-story :focus-visible{outline-color:var(--ivory)}
+.home-ring-story.is-scroll-ready{height:165svh}
+.is-scroll-ready .ring-story-sticky{position:sticky;top:var(--ring-header,130px);height:calc(100svh - var(--ring-header,130px));min-height:0;padding-block:30px}
+.is-scroll-ready .ring-story-art{width:min(49vw,calc((100svh - var(--ring-header,130px))*.73),680px)}
+.is-scroll-ready .ring-art-diamond,.is-scroll-ready .ring-art-frame{will-change:transform}
+@media(min-width:1650px){.ring-story-art{right:12%;width:650px}}
+@media(max-width:900px){.ring-story-art{right:1%;width:460px}.ring-story-sticky{min-height:650px}.home-ring-story h2{font-size:84px}.ring-story-copy{width:47%}.ring-story-actions .button{padding:16px 21px}}
+@media(max-width:650px){
+ .ring-story-sticky{min-height:770px;align-items:flex-start;justify-content:center;padding:42px 6% 20px}.ring-story-copy{width:100%;text-align:center}.ring-story-copy .eyebrow{font-size:8px;margin-bottom:17px}.home-ring-story h2{font-size:60px;line-height:1.02;margin:0 0 23px}.home-ring-story h2 br{display:none}.home-ring-story h2 em{margin-left:.16em}
+ .ring-story-actions{align-items:center;gap:16px}.ring-story-actions .button{font-size:9px;padding:13px 20px}.ring-story-actions .text-link{font-size:10px}
+ .ring-story-art{width:335px;max-width:90vw;top:auto;right:50%;bottom:-8px;transform:translateX(50%)}.ring-light-halo{width:120%;right:-10%;top:64%}.ring-light-arc{width:135%;right:-17%;top:64%}
+ .ring-story-sticky:after{background:linear-gradient(180deg,var(--deep),#2b0d16e0 20%,#2b0d1600 43%)}
+ .home-ring-story.is-scroll-ready{height:165svh}.is-scroll-ready .ring-story-sticky{padding-top:26px}.is-scroll-ready .ring-story-art{width:min(88vw,calc((100svh - var(--ring-header,100px) - 220px)*.72))}
+ .home-ring-story .ring-motion-toggle{right:18px;bottom:18px;width:34px;height:34px}
+}
+@media(prefers-reduced-motion:reduce){.home-ring-story.is-scroll-ready{height:auto}.is-scroll-ready .ring-story-sticky{position:relative;top:auto;height:auto}.ring-art-frame{transform:translateY(-7%)!important;will-change:auto!important}.ring-art-diamond{transform:translateY(20.5%)!important;will-change:auto!important}.ring-art-glint{display:none}.ring-light-halo{transform:translateY(-50%)}}
+
+/* Subtle flag-inspired folds behind the scroll-linked ring. */
+.ring-story-sticky{background:radial-gradient(ellipse at 73% 44%,#8f727b66 0%,#5a1b2a88 31%,var(--deep) 76%)}
+.ring-story-sticky:after{background:linear-gradient(90deg,#2b0d1655,transparent 56%)}
+.ring-story-copy{max-width:490px;padding-bottom:34px}
+.ring-story-copy .eyebrow{font-size:10px;margin-bottom:22px;letter-spacing:.2em}
+.home-ring-story h2{font-size:clamp(76px,8.2vw,122px);margin-bottom:24px}
+.ring-story-copy .ring-story-intro{font:400 14px/1.85 var(--sans);color:#e0ccd0;margin:0 0 28px;max-width:36ch}
+.ring-story-actions{gap:18px}
+.ring-freedom-scene{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.ring-freedom-ribbons{position:absolute;inset:-8% -8% -8% 10%;width:98%;height:116%;fill:#e3d2bc;fill-opacity:.035;stroke:#e3d2bc;stroke-opacity:.07;stroke-width:.7;transform:translateY(calc((1 - var(--ring-progress))*34px)) rotate(calc((1 - var(--ring-progress))*-3deg));transform-origin:70% 60%}
+.home-ring-story .ring-motion-toggle{bottom:18px;right:22px}
+@media(min-width:651px) and (max-height:800px){
+ .home-ring-story h2{font-size:clamp(70px,7.1vw,108px);margin-bottom:18px}
+ .ring-story-copy .eyebrow{margin-bottom:16px}
+ .ring-story-copy .ring-story-intro{font-size:13px;margin-bottom:22px}
+}
+@media(min-width:651px) and (max-width:1000px){
+ .ring-story-copy .ring-story-intro{font-size:13px}
+}
+@media(max-width:650px){
+ .ring-story-sticky{min-height:820px;padding-top:36px}
+ .ring-story-copy{position:static;max-width:none;padding-bottom:0}
+ .ring-story-copy .eyebrow{font-size:9px;margin-bottom:15px}
+ .home-ring-story h2{font-size:clamp(44px,13.5vw,62px);margin-bottom:16px}
+ .ring-story-copy .ring-story-intro{font-size:12px;line-height:1.75;max-width:32ch;margin:0 auto}
+ .ring-story-actions{position:absolute;bottom:68px;left:6%;right:6%;flex-direction:row;justify-content:center;align-items:center;gap:16px}
+ .home-ring-story .ring-story-actions .button{min-height:46px;font-size:9px;padding:12px 15px;gap:12px;letter-spacing:.04em}
+ .home-ring-story .ring-story-actions .text-link{font-size:10px;gap:8px;min-height:38px}
+ .ring-story-actions a{flex:none}
+ .ring-story-art{bottom:120px;width:300px;max-width:80vw}
+ .is-scroll-ready .ring-story-art{width:min(80vw,calc((100svh - var(--ring-header,100px) - 300px)*.62))}
+ .ring-freedom-ribbons{width:200%;left:-63%;height:95%;top:8%;fill-opacity:.025;stroke-opacity:.065}
+ .home-ring-story .ring-motion-toggle{right:14px;bottom:26px;width:34px;height:34px}
+ .ring-story-sticky:after{background:linear-gradient(180deg,#2b0d1677,transparent 45%)}
+}
+@media(max-width:360px){
+ .ring-story-actions{gap:10px;left:5%;right:5%}
+ .home-ring-story .ring-story-actions .button{font-size:8px;padding-inline:12px;gap:8px}
+ .home-ring-story .ring-story-actions .text-link{font-size:9px;gap:4px}
+}
+@media(prefers-reduced-motion:reduce){
+ .ring-freedom-ribbons{transform:none}
+}

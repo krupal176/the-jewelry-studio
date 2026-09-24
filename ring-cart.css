@@ -1,0 +1,45 @@
+/* Ring cart and checkout additions. Existing diamond-only cart styles remain shared. */
+.rb-cart .rb-cart-pair{margin:0;min-width:0;align-self:start}
+.rb-cart .rb-cart-setting-photo{aspect-ratio:1/1.08}
+.rb-cart .rb-cart-diamond-pair{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px 0 11px}
+.rb-cart .rb-cart-diamond-pair>span:first-child{font:400 20px var(--serif,Georgia,serif);color:var(--wine,#5a1b2a)}
+.rb-cart .rb-cart-diamond-pair>a{display:block;flex:0 0 56px;width:56px;height:56px;background:#fffdf9;border:1px solid var(--line,#ded4cb)}
+.rb-cart .rb-cart-diamond-pair img{display:block;width:100%;height:100%;object-fit:contain;padding:3px;mix-blend-mode:multiply}
+.rb-cart .rb-cart-diamond-pair>span:last-child{font:9px/1.5 var(--sans,sans-serif);color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-pair figcaption{font:9px/1.7 var(--sans,sans-serif);color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-preferences{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:15px;margin:-3px 0 25px}
+.rb-cart .rb-cart-preferences dt{font:9px/1.4 var(--sans,sans-serif);color:var(--muted,#786a6b);margin-bottom:5px}
+.rb-cart .rb-cart-preferences dd{font:12px/1.5 var(--sans,sans-serif);margin:0;overflow-wrap:anywhere}
+.rb-cart .rb-cart-diamond-copy{border-top:1px solid var(--line,#ded4cb);padding-top:18px}
+.rb-cart .rb-cart-diamond-copy .diamond-cart-kind{font-size:8px;margin-bottom:8px}
+.rb-cart .rb-cart-diamond-copy h3{font:400 24px/1.2 var(--serif,Georgia,serif);margin:0 0 18px;overflow-wrap:anywhere}
+.rb-cart .rb-cart-diamond-copy h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.rb-cart .rb-cart-prices{margin:0;border-top:1px solid var(--line,#ded4cb);padding-top:15px}
+.rb-cart .rb-cart-prices>div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:10px;font:11px/1.6 var(--sans,sans-serif)}
+.rb-cart .rb-cart-prices dt{color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-prices dt span{font-size:9px;display:inline-block}
+.rb-cart .rb-cart-prices dd{margin:0;white-space:nowrap}
+.rb-cart .rb-cart-prices .rb-cart-combined{border-top:1px solid var(--line,#ded4cb);padding-top:13px;margin-top:13px;font-size:12px}
+.rb-cart .rb-cart-prices .rb-cart-combined dt,.rb-cart .rb-cart-prices .rb-cart-combined dd{color:var(--wine,#5a1b2a);font-weight:500}
+.rb-cart .rb-cart-price-note{font:10px/1.75 var(--sans,sans-serif);margin:12px 0 0;color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-actions{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:20px}
+.rb-cart .rb-cart-actions .text-link{font-size:10px;padding:5px 0}
+.rb-cart .rb-cart-actions .diamond-cart-remove{margin:0;padding:5px 0}
+.rb-cart .rb-cart-summary-count{font:11px/1.6 var(--sans,sans-serif);margin:0;color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-summary h2{margin-bottom:15px}
+.rb-cart .rb-cart-summary .diamond-cart-totals>.diamond-cart-estimate{font-size:15px}
+.rb-cart .rb-cart-summary-price-note{font:10px/1.75 var(--sans,sans-serif);margin:-10px 0 23px;color:var(--muted,#786a6b)}
+.rb-cart .rb-cart-back{display:block;width:fit-content;margin:18px auto 0;text-align:center;font:11px/1.6 var(--sans,sans-serif);color:var(--wine,#5a1b2a);text-decoration:underline;text-underline-offset:4px}
+.rb-checkout .rb-checkout-crumb{display:flex;flex-wrap:wrap;gap:12px;font:10px/1.5 var(--sans,sans-serif);color:var(--muted,#786a6b);margin:-25px 0 30px}
+.rb-checkout .rb-checkout-crumb a:hover{color:var(--wine,#5a1b2a);text-decoration:underline;text-underline-offset:4px}
+.rb-checkout .diamond-cart-heading h1{font-size:clamp(40px,4.4vw,62px)}
+.rb-checkout .diamond-cart-heading{margin-bottom:24px}
+.rb-checkout .rb-checkout-notice{display:flex;align-items:center;gap:17px;padding:18px 23px;background:#f0eae1;border:1px solid var(--line,#ded4cb);margin:0 0 36px}
+.rb-checkout .rb-checkout-notice>span{color:var(--wine,#5a1b2a);font:400 33px/1 var(--serif,Georgia,serif)}
+.rb-checkout .rb-checkout-notice p{margin:0;font:11px/1.8 var(--sans,sans-serif)}
+.rb-checkout .rb-checkout-notice strong{font-weight:500;color:var(--wine,#5a1b2a)}
+.rb-cart a:focus-visible,.rb-cart button:focus-visible{outline:2px solid var(--wine,#5a1b2a);outline-offset:4px}
+@media(min-width:1100px){.rb-cart .rb-cart-summary{position:sticky;top:130px}}
+@media(max-width:960px) and (min-width:761px){.rb-cart .rb-cart-ring{grid-template-columns:130px minmax(0,1fr)}.rb-cart .rb-cart-diamond-pair{gap:6px}.rb-cart .rb-cart-diamond-pair>a{flex-basis:43px;width:43px;height:43px}}
+@media(max-width:760px){.rb-cart .rb-cart-ring{grid-template-columns:125px minmax(0,1fr);gap:20px}.rb-cart .rb-cart-diamond-pair{gap:7px}.rb-cart .rb-cart-diamond-pair>a{flex-basis:43px;width:43px;height:43px}.rb-cart .rb-cart-preferences{gap:10px;margin-bottom:22px}.rb-cart .rb-cart-preferences dd{font-size:11px}.rb-cart .rb-cart-diamond-copy h3{font-size:23px}.rb-cart .rb-cart-prices>div{font-size:10px;gap:10px}.rb-cart .rb-cart-prices .rb-cart-combined{font-size:11px}.rb-checkout .rb-checkout-crumb{margin:-6px 0 23px}.rb-checkout .rb-checkout-notice{padding:17px;gap:12px;margin-bottom:30px}.rb-checkout .rb-checkout-notice p{font-size:10px}}
+@media(max-width:520px){.rb-cart .rb-cart-ring{grid-template-columns:1fr;gap:23px}.rb-cart .rb-cart-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:12px 20px}.rb-cart .rb-cart-setting-photo{aspect-ratio:1.25}.rb-cart .rb-cart-diamond-pair{margin:0;align-self:center;flex-wrap:wrap;justify-content:flex-start}.rb-cart .rb-cart-diamond-pair>a{flex-basis:64px;width:64px;height:64px}.rb-cart .rb-cart-diamond-pair>span:last-child{width:100%;padding-left:30px;font-size:9px}.rb-cart .rb-cart-pair figcaption{grid-column:1/-1;font-size:9px;max-width:330px}.rb-cart .rb-cart-ring h2{font-size:29px}.rb-cart .rb-cart-ring .diamond-cart-specs{grid-template-columns:repeat(3,minmax(0,1fr));gap:15px 10px}.rb-cart .rb-cart-ring .diamond-cart-specs dt{font-size:9px}.rb-cart .rb-cart-ring .diamond-cart-specs dd{font-size:11px}.rb-cart .rb-cart-preferences{grid-template-columns:1fr 1fr}.rb-cart .rb-cart-prices>div{font-size:11px}.rb-cart .rb-cart-prices .rb-cart-combined{font-size:12px}.rb-checkout .diamond-cart-heading h1{font-size:40px}}

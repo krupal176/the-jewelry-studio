@@ -1,0 +1,224 @@
+/* Shared TJS finish: presentation and usable controls, no commerce/data changes. */
+:root{--surface:#fffdf9;--reading:#665759;--ease-studio:cubic-bezier(.22,.61,.36,1)}
+html{scroll-padding-top:160px}
+main :is(h1,h2,h3){text-wrap:balance}
+main :is(p,li){text-wrap:pretty}
+main :is(input,select,textarea){accent-color:var(--wine)}
+
+/* Substantial, quiet controls. Disabled actions never animate like live ones. */
+body .button{min-height:50px;font-size:11px;font-weight:600;line-height:1.5;letter-spacing:.095em;padding:14px 25px;transition:background .22s,color .22s,border-color .22s;transform:none}
+body .button:hover,body .button:active{transform:none}
+body .button.outline:hover{background:var(--wine);border-color:var(--wine);color:var(--ivory)}
+body .button.outline-light:hover{background:var(--ivory);border-color:var(--ivory);color:var(--deep)}
+body .button:disabled,body .button[aria-disabled="true"]{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+body .button:disabled:hover{background:var(--wine);color:var(--ivory)}
+body .button.outline:disabled:hover{background:transparent;color:var(--wine)}
+body .text-link{min-height:36px;font-size:12px;line-height:1.5;transition:color .2s,border-color .2s}
+body .text-link>span{transition:transform .25s var(--ease-studio)}
+body .text-link:hover>span{transform:translateX(3px)}
+body :is(a,button,input,select,textarea,summary):focus-visible{outline:2px solid var(--wine);outline-offset:4px}
+body :is(.hero,.home-custom,.site-footer) :focus-visible{outline-color:var(--ivory)}
+body .icon{min-height:44px;min-width:38px}
+body .panel-head button{width:44px;height:44px;flex:none;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--wine)}
+body .panel-head button:hover{background:var(--warm)}
+body .panel-head h2{font-size:34px;line-height:1.12}
+body .panel-body>p{font-size:13px;line-height:1.85}
+body .search-form input{font-size:16px;min-height:50px}
+body .search-form:focus-within{outline:2px solid var(--wine);outline-offset:4px}
+body .search-form input:focus-visible{outline:none}
+body .search-form button{width:48px;flex:none}
+body .chip{min-height:40px;padding:9px 16px;font-size:12px}
+body .chip:hover{border-color:var(--wine)}
+#toast{border:1px solid #af838b;line-height:1.6;box-shadow:0 8px 32px #2b0d1624}
+
+/* Keep the existing editorial home and give it a more consistent rhythm. */
+#main > .hero .hero-actions .button{font-size:11px;min-height:52px;padding-inline:28px}
+#main > .hero .hero-actions .text-link{font-size:12px}
+.home-experience .home-simple-heading{padding-bottom:22px;border-bottom:1px solid var(--line)}
+.home-experience .home-category h3{line-height:1.3}
+.home-experience .tab-row button{min-height:46px;font-size:12px;font-weight:600}
+.home-experience .section-head{margin-bottom:20px}
+.home-experience .home-shape-foot .text-link{font-size:12px}
+body :is(.home-rail-controls button,.shape-motion-toggle,.ring-motion-toggle,.collection-category-arrow){width:44px;height:44px}
+body .video-toggle{min-height:40px;font-size:11px;padding-inline:16px;background:#2b0d164d}
+
+/* Product cards: photographic surfaces, serif names, precise swatch targets. */
+.product-card{border:1px solid transparent;background:var(--surface);transition:border-color .25s,box-shadow .25s}
+.product-card .product-image{background:#faf9f6;aspect-ratio:1}
+.product-card .product-info,.ring-listing .product-info{padding:19px 17px 21px}
+.product-card .product-info h3,.ring-listing .product-info h3{font:400 23px/1.18 var(--serif);letter-spacing:-.015em;color:var(--ink);margin:6px 0 10px;min-height:2.36em}
+.product-card .product-info small{font-size:9px;letter-spacing:.09em;color:var(--reading)}
+.product-card .product-info .price{font-size:14px;font-weight:600;letter-spacing:.015em}
+.product-card .card-metal-label{font-size:12px;color:var(--reading)}
+.product-card .wish{width:40px;height:40px;right:10px;top:10px;background:#fffdf9e8;border:1px solid #ded4cb8c;transition:background .2s,border-color .2s}
+.product-card .wish:hover{background:var(--ivory);border-color:var(--wine)}
+.product-card .wish.saved,.product-card .wish.saved:hover{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
+.product-card .wish.saved svg{fill:none;stroke:var(--ivory)}
+.product-card .studio-card-metals{display:flex;gap:4px;margin:8px 0;min-height:40px}
+.product-card .studio-card-metals button,.ring-listing .studio-card-metals button{position:relative;display:grid;place-items:center;flex:0 1 36px;width:36px;min-width:24px;height:40px;min-height:40px;border:0;border-radius:0;background:transparent;outline:none}
+.product-card .studio-card-metals button:before{content:"";width:19px;height:19px;box-sizing:border-box;background:var(--metal-swatch);border:1px solid #b6aaa0;border-radius:50%;transition:box-shadow .2s}
+.product-card .studio-card-metals button:after{display:none}
+.product-card .studio-card-metals [data-metal-tone="White gold"]{--metal-swatch:#dfdedc}
+.product-card .studio-card-metals [data-metal-tone="Yellow gold"]{--metal-swatch:#efd5a3}
+.product-card .studio-card-metals [data-metal-tone="Rose gold"]{--metal-swatch:#dcae9c}
+.product-card .studio-card-metals [data-metal-tone="Platinum"]{--metal-swatch:#c7cdce}
+.product-card .studio-card-metals button[aria-pressed="true"]:before{box-shadow:0 0 0 3px var(--surface),0 0 0 4px var(--wine)}
+.product-card .studio-card-metals button:hover:before{border-color:var(--wine)}
+.product-card .studio-card-metals button:focus-visible{outline:2px solid var(--wine);outline-offset:0}
+@media(hover:hover) and (pointer:fine){
+ .product-card:hover{border-color:#c8b5ad;box-shadow:0 8px 24px #2b0d1606}
+ .product-card .product-image:hover img{transform:scale(1.025)}
+}
+
+/* Collection controls are a legible part of the design, not tiny utility text. */
+.ring-collection-heading{padding-top:38px;padding-bottom:24px}
+.ring-collection-heading h1{font-size:clamp(38px,3.7vw,58px);color:var(--wine)}
+.ring-listing .collection-category-visual{aspect-ratio:1.2}
+.ring-listing .collection-category-name{font-size:19px;min-height:48px}
+.ring-listing .ring-listing-filters{background:#fffcf74d;border-top-color:#cdbeb3;border-bottom-color:#cdbeb3;padding-block:25px}
+.ring-listing .ring-listing-filters legend{font-size:13px;font-weight:600;margin-bottom:15px}
+.ring-listing .ring-listing-metal{font-size:11px;min-height:62px}
+.ring-listing .ring-listing-metal-disc{width:32px;height:32px}
+.ring-listing .ring-listing-selects label,.ring-listing .ring-listing-price-inputs label{font-size:11px}
+.ring-listing .ring-listing-price-inputs label>span{min-height:42px;background:var(--surface)}
+.ring-listing .ring-listing-price-inputs input{min-height:40px;font-size:13px}
+.ring-listing .ring-listing-selects select{min-height:44px;font-size:12px;padding:10px;background:var(--surface)}
+.ring-listing .ring-listing-count{font-size:13px}
+.ring-listing .ring-listing-reset{font-size:12px;min-height:36px}
+.ring-listing .ring-listing-range{height:36px}
+.ring-listing .ring-listing-range input{height:36px}
+.ring-listing .ring-listing-range-track{top:17px}
+.finder-heading h1{color:var(--wine)}
+.finder-heading p:not(.eyebrow){font-size:14px}
+.finder-shapes .eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em}
+.finder-shapes .shape-link{font-size:11px}
+.finder-sidebar label,.finder-sidebar legend{font-size:12px}
+.finder-sidebar .finder-check{flex-direction:row;align-items:center;gap:10px;min-height:44px;font-size:12px}
+.finder-sidebar .finder-check input{flex:none;width:17px;height:17px;min-height:0;padding:0}
+.finder-toolbar label,.finder-toolbar .result-count small{font-size:11px}
+.finder-toolbar select{min-height:44px;font-size:12px;background:var(--surface)}
+.finder-chips a{display:inline-flex;align-items:center;min-height:36px;font-size:11px}
+.diamond-card{background:var(--surface)}
+.diamond-card .button{font-size:11px;min-height:46px;letter-spacing:.05em}
+.diamond-card dt{font-size:10px}
+.diamond-card dd{font-size:12px}
+.diamond-details{min-height:40px;display:flex;justify-content:center;align-items:center;font-size:12px;margin-top:5px}
+.diamond-price small{font-size:10px}
+@media(min-width:651px){.finder-sidebar{max-height:calc(100svh - 180px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin;padding:4px 10px 8px 4px;scroll-padding-block:10px}}
+
+/* Detail, review and client-care typography follows the same rhythm. */
+:is(.rb-copy,.diamond-detail-copy,.detail-copy) h1{color:var(--wine)}
+.rb-copy>p,.diamond-detail-description,.detail-copy .desc{font-size:14px;line-height:1.85}
+.rb-metal-options button,.metal-options button{min-height:44px;font-size:12px}
+.rb-metal-options button:hover{background:var(--warm)}
+.rb-specs dt,.diamond-detail-specs dt{font-size:10px}
+.rb-copy .button.full,.diamond-detail-actions>.button{min-height:52px;font-size:12px}
+.diamond-detail-reading{grid-template-columns:repeat(2,minmax(0,1fr))}
+.diamond-detail-reading :is(p,a){font-size:13px}
+.diamond-detail-secondary .text-link{font-size:12px;min-height:44px}
+.rb-copy .rb-disclosure,.diamond-detail-preview-note{font-size:11px;color:var(--reading)}
+.diamond-cart-page .diamond-cart-summary{background:var(--surface);border-top:3px solid var(--wine);padding-top:28px}
+.diamond-cart-page .diamond-cart-summary>.button{font-size:12px;min-height:52px}
+.diamond-cart-page .diamond-cart-totals>div{font-size:13px}
+.diamond-cart-page .diamond-cart-totals>.diamond-cart-estimate{font-size:18px}
+.diamond-cart-page .diamond-cart-remove,.rb-cart .rb-cart-actions .text-link{min-height:44px;font-size:12px;display:inline-flex;align-items:center}
+.diamond-cart-page .diamond-cart-note,.rb-cart .rb-cart-price-note,.rb-cart .rb-cart-summary-price-note{font-size:11px;color:var(--reading)}
+.rb-cart .rb-cart-preferences dt,.rb-cart .rb-cart-prices>div{font-size:12px}
+main .form-grid label{font-size:12px;letter-spacing:.02em}
+main .form-grid :is(input,select){min-height:48px}
+main .form-grid :is(input,select,textarea){background:var(--surface);font-size:14px;border-color:#cdbeb3}
+main .form-grid :is(input,select,textarea):hover{border-color:#a88d8c}
+main .form-note{font-size:12px!important}
+main :is(.document,.split-page)>p{font-size:14px;line-height:1.9}
+main .document li{font-size:14px}
+main details>summary{min-height:44px;align-items:center;font-size:13px;gap:18px}
+main details>summary:after{font-size:20px;font-weight:400;color:var(--wine);flex:none}
+main details>p{font-size:13px;line-height:1.85}
+.studio-policy-card{background:var(--surface)}
+.studio-policy-card:hover{border-color:var(--wine)}
+.contact-menu{background:var(--surface);border-top:2px solid var(--wine)}
+.contact-menu :is(a,button){min-height:44px;font-size:12px}
+.site-footer .footer-links h3{font-size:12px;font-weight:600;color:var(--ivory)}
+.site-footer .footer-links a{font-size:12px;line-height:1.7;min-height:27px;margin-bottom:8px}
+.site-footer .footer-links p{font-size:12px}
+.site-footer .footer-bottom{font-size:10px;line-height:1.7}
+
+@media(max-width:650px){
+ html{scroll-padding-top:120px}
+ body .button{font-size:11px;min-height:48px;padding:13px 18px;letter-spacing:.065em}
+ body .text-link{font-size:12px}
+ .header-top{margin-inline:3%;gap:4px}
+ body .header-actions>.icon{min-width:34px}
+ #main > .hero .hero-actions{gap:20px;flex-wrap:wrap}
+ #main > .hero .hero-actions .button{font-size:10px;padding-inline:20px}
+ #main > .hero .hero-actions .text-link{font-size:11px}
+ .home-experience .tab-row{gap:20px}
+ .home-experience .tab-row button{font-size:11px;min-height:44px}
+ .product-card .product-info,.ring-listing .product-info{padding:12px 9px 16px}
+ .product-card .product-info h3,.ring-listing .product-info h3{font-size:20px;line-height:1.2;min-height:2.4em}
+ .product-card .product-info small{font-size:9px;letter-spacing:.03em;line-height:1.6}
+ .product-card .product-info .price{font-size:13px}
+ .product-card .card-metal-label{font-size:11px}
+ .product-card .studio-card-metals{gap:3px}
+ .product-card .studio-card-metals button,.ring-listing .studio-card-metals button{flex:1 1 24px;max-width:36px;width:auto;min-width:24px;height:44px;min-height:44px}
+ .product-card .studio-card-metals button:before{width:17px;height:17px}
+ .product-card .wish{width:40px;height:40px;right:5px;top:5px}
+ .ring-collection-heading{padding-top:28px;padding-bottom:16px}
+ .ring-collection-heading h1{font-size:38px}
+ .ring-listing .ring-listing-metal{font-size:10px}
+ .ring-listing .ring-listing-summary{gap:12px}
+ .ring-listing .collection-category-name{font-size:18px}
+ .collection-category-arrow.previous{left:-12px}
+ .collection-category-arrow.next{right:-12px}
+ .finder-heading p:not(.eyebrow){font-size:13px}
+ .finder-shapes .shape-link{font-size:10px}
+ .finder-sidebar{padding:20px 16px;border:1px solid var(--line)}
+ .diamond-card h2{font-size:23px;line-height:1.15}
+ .diamond-card dt{font-size:9px;letter-spacing:.04em}
+ .diamond-card dd{font-size:11px}
+ .diamond-card .button{font-size:10px;min-height:46px;padding:10px 7px;letter-spacing:.015em}
+ .diamond-details{font-size:11px}
+ .diamond-detail-reading{grid-template-columns:1fr}
+ main :is(.form-grid input,.form-grid select,.form-grid textarea,.finder-sidebar input:not([type="range"]):not([type="checkbox"]),.finder-sidebar select,.finder-toolbar select,.ring-listing-price-inputs input,.ring-listing-selects select,.rb-copy select){font-size:16px}
+ #diamond-filters input[data-range-value]{font-size:16px}
+ .rb-page #rb-ring-size,.studio-promo input,#engraving-form input,#engraving-form select{font-size:16px;min-height:48px}
+ .site-footer .footer-links a{min-height:36px;margin-bottom:5px;font-size:12px}
+ .site-footer .footer-bottom a{display:inline-flex;align-items:center;min-height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+ body .text-link>span,.product-card,.product-card .wish,.product-card .studio-card-metals button:before{transition:none;transform:none}
+}
+@media(max-width:380px){
+ .header-top{grid-template-columns:30px minmax(0,1fr) auto;gap:3px;margin-inline:3%}
+ .header .wordmark{font-size:16px;letter-spacing:.015em;white-space:nowrap}
+ body .mobile-menu{min-width:30px;width:30px}
+ body .header-actions>.icon{min-width:30px;width:30px}
+ .header-actions{gap:0}
+ main .form-grid{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Compact diamond preferences without shrinking their control targets. */
+.finder-sidebar .filter-heading{margin-bottom:10px}
+#diamond-filters{gap:8px;padding-top:12px}
+#diamond-filters label{gap:5px;line-height:1.5}
+#diamond-filters .finder-origin-options{margin:0}
+#diamond-filters .finder-origin-options a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:6px}
+#diamond-filters .finder-check{margin:0!important;min-height:44px;gap:8px;line-height:1.45}
+#diamond-filters input[data-range-value]{height:43px;min-height:43px}
+#diamond-filters :is(.finder-grade,.finder-advanced){padding:0}
+#diamond-filters :is(.finder-grade,.finder-advanced)>summary{min-height:44px;line-height:1.5;gap:12px}
+#diamond-filters details>summary:after{content:'+'}
+#diamond-filters details[open]>summary:after{content:'−'}
+#diamond-filters .finder-grade[open]{padding-bottom:8px}
+#diamond-filters .finder-grade>label,#diamond-filters .finder-numeric-pair{margin:4px 0 0}
+#diamond-filters .finder-numeric-pair{gap:8px}
+#diamond-filters .finder-numeric-pair label{margin:0}
+#diamond-filters .finder-advanced>.finder-grade{margin-left:10px}
+#diamond-filters .finder-advanced>.finder-grade:last-child{border-bottom:0}
+.finder-sidebar .filter-help{padding-top:12px;margin:16px 0 8px}
+
+/* Jewelry detail favorites retain the same clear saved state as product cards. */
+.ring-product-page .buy-row [data-favorite][aria-pressed="true"]{background:var(--wine);border-color:var(--wine);color:var(--ivory)}
+@media(max-width:650px){
+ main #filters select{font-size:16px;min-height:44px}
+}

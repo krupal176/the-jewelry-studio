@@ -1,0 +1,386 @@
+/* Compact TJS navigation; loaded after the shared stylesheet. */
+.nav{gap:36px;padding:0 24px;position:static;align-items:stretch}
+.nav-trigger,.nav-direct{display:flex;align-items:center;min-height:44px}
+.nav .nav-trigger>a,.nav .nav-direct>a{padding:12px 0;font:400 20px/1.2 var(--serif);letter-spacing:0}
+.nav a:after{display:none}
+.nav .nav-trigger>a:after,.nav .nav-direct>a:after{display:block;bottom:6px}
+.menu-toggle{display:grid;place-items:center;width:28px;height:40px;padding:0;margin-left:3px;color:var(--wine)}
+.menu-toggle svg{width:12px;height:12px;transition:transform .2s}
+.expanded .menu-toggle svg{transform:rotate(180deg)}
+.expanded .nav-trigger>a{color:var(--wine)}
+.mega-menu{position:absolute;left:0;right:0;top:100%;background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 24px 36px #2b0d161a;max-height:calc(100svh - 150px);overflow:auto;animation:menu-arrive .18s ease-out}
+.mega-menu[hidden]{display:none!important}
+.mega-inner{max-width:1320px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr 230px;gap:36px;padding:30px 5% 26px}
+#mega-diamonds .mega-inner{grid-template-columns:minmax(310px,1.8fr) minmax(140px,1fr) minmax(130px,1fr) 190px;gap:24px}
+.mega-group h2{font:10px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--wine);margin:2px 0 17px}
+.mega-links{display:flex;flex-direction:column;gap:3px}
+.menu-link-note{display:block;font-size:9px;color:var(--muted);letter-spacing:.025em;margin-top:3px}
+.nav .mega-links a{font-size:12px;letter-spacing:0;line-height:1.5;padding:7px 0;display:block;width:fit-content;border-bottom:0;color:var(--ink)}
+.nav .mega-links a:hover{color:var(--wine);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+/* Text link lists (Find your ring et al): colour fade + the nav's sweeping underline. */
+.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a{position:relative;transition:color .28s ease}
+.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a:after{content:'';display:block;position:absolute;left:0;bottom:2px;width:0;height:1px;background:var(--wine);transition:width .28s ease}
+.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a:hover,.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a:focus-visible{color:var(--wine);text-decoration:none}
+.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a:hover:after,.mega-group:not(.mega-shapes):not(.mega-types) .mega-links a:focus-visible:after{width:100%}
+.mega-shapes .mega-links{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px 5px}
+.nav .mega-shapes a{display:flex;flex-direction:column;gap:5px;align-items:center;width:100%;padding:5px 2px 7px;font-size:10px;border-radius:2px;text-decoration:none}
+.mega-shapes img{width:44px;height:44px;object-fit:contain;transition:transform .18s}
+.nav .mega-shapes a:hover{background:var(--warm);text-decoration:none}
+.mega-shapes a:hover img{transform:translateY(-2px)}
+.mega-shapes a:hover span{text-decoration:underline;text-underline-offset:4px}
+.nav .mega-promo{display:block;letter-spacing:0;align-self:start;border:0;background:var(--warm)}
+.mega-promo>img{width:100%;height:146px;object-fit:cover;object-position:center}
+.mega-caption{display:block;font:23px/1.12 var(--serif);letter-spacing:-.025em;padding:15px 15px 9px;color:var(--wine)}
+.mega-cta{display:flex;gap:10px;align-items:center;justify-content:space-between;font:9px/1.5 var(--sans);padding:0 15px 15px}
+.mega-promo:hover .mega-cta{text-decoration:underline;text-underline-offset:4px}
+.mega-bottom{max-width:1188px;margin:0 auto;padding:14px 0 16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:9px;letter-spacing:.06em}
+.nav .mega-bottom a{font-size:10px;letter-spacing:0;color:var(--wine);border:0;padding:0}
+.mega-bottom a:hover{text-decoration:underline;text-underline-offset:4px}
+.shape-link img{filter:none;width:56px;height:56px}
+@keyframes menu-arrive{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:1001px) and (max-width:1300px){.mega-bottom{margin:0 5%}.mega-inner{gap:24px;grid-template-columns:1fr 1fr 1fr 200px}#mega-diamonds .mega-inner{grid-template-columns:minmax(285px,1.8fr) minmax(120px,1fr) minmax(120px,1fr) 165px;gap:20px}.mega-caption{font-size:21px}}
+@media(min-width:651px) and (max-width:1000px){.nav{gap:16px;padding:0 18px}.nav .nav-trigger>a,.nav .nav-direct>a{font-size:18px}.mega-inner{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding:26px 5%}.nav .mega-promo{display:none}#mega-diamonds .mega-inner{grid-template-columns:minmax(270px,1.7fr) minmax(120px,1fr) minmax(120px,1fr);gap:18px}.mega-bottom{margin:0 5%}}
+@media(max-width:650px){
+  .nav{padding:6px 6% 18px;gap:0;max-height:calc(100svh - 100px);overflow:auto;overscroll-behavior:contain}
+  .nav-trigger,.nav-direct{min-height:49px;justify-content:space-between;border-bottom:1px solid var(--line)}
+  .nav .nav-trigger>a,.nav .nav-direct>a{font-size:21px;padding:13px 0;border:0;flex:1}
+  .nav .nav-trigger>a:after,.nav .nav-direct>a:after{display:none}
+  .menu-toggle{width:44px;height:44px;margin:0;flex:none}.menu-toggle svg{width:15px;height:15px}
+  .mega-menu{position:static;max-height:none;overflow:visible;box-shadow:none;border:0;animation:none}
+  .mega-inner,#mega-diamonds .mega-inner{display:grid;grid-template-columns:1fr 1fr;padding:22px 0 20px;gap:22px 18px}
+  .mega-group h2{font-size:9px;margin-bottom:12px}.nav .mega-links a{font-size:12px;padding:9px 0;line-height:1.5}
+  .mega-shapes{grid-column:1/-1}.mega-shapes .mega-links{gap:10px 3px}.nav .mega-shapes a{font-size:9px;padding:5px 1px}.mega-shapes img{width:42px;height:42px}
+  .nav .mega-promo{display:none}.mega-bottom{padding:12px 0 18px;gap:12px}.mega-bottom>span{display:none}
+  .shape-link img{width:42px;height:42px}
+}
+@media(prefers-reduced-motion:reduce){.mega-menu{animation:none}.menu-toggle svg,.mega-shapes img{transition:none}.mega-group .mega-links a,.mega-group .mega-links a:after{transition:none}}
+
+/* Engagement only: style directory, ring creation, learning, and editorial card.
+   Shared header positioning and menu open/close behavior remain unchanged. */
+#mega-engagement .mega-inner{grid-template-columns:minmax(300px,1.8fr) minmax(175px,1fr) minmax(135px,.8fr) minmax(190px,230px);gap:28px}
+#mega-engagement .mega-ring-styles>.mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 18px}
+#mega-engagement .mega-ring-styles>.mega-links>a{display:flex;align-items:center;gap:9px;min-height:44px;width:100%;padding:5px 0;font-size:12px;line-height:1.4}
+#mega-engagement .engagement-style-icon{width:40px;height:28px;flex:0 0 40px;fill:none;stroke:var(--wine);stroke-width:.85;stroke-linecap:round;stroke-linejoin:round}
+#mega-engagement .mega-ring-styles>.mega-links>a:after{left:49px;max-width:calc(100% - 49px)}
+#mega-engagement .mega-group{min-width:0}
+#mega-engagement .engagement-metal-shortcuts{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+#mega-engagement .engagement-metal-shortcuts h3{font:9px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+#mega-engagement .engagement-metal-shortcuts .mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 10px}
+#mega-engagement .engagement-metal-shortcuts a{display:flex;align-items:center;gap:7px;font-size:11px;padding:6px 0;min-height:38px}
+#mega-engagement .engagement-metal-icon{width:26px;height:24px;flex:0 0 26px;--metal-face:#e4e1dc;--metal-band:#b9b6b0;--metal-edge:#85827e;stroke:var(--metal-edge);stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+#mega-engagement .engagement-metal-icon[data-metal-tone="Yellow gold"]{--metal-face:#ecd09a;--metal-band:#c49b55;--metal-edge:#a37b3e}
+#mega-engagement .engagement-metal-icon[data-metal-tone="Rose gold"]{--metal-face:#ebc1ad;--metal-band:#c68e78;--metal-edge:#ad7565}
+#mega-engagement .engagement-metal-icon[data-metal-tone="Platinum"]{--metal-face:#d6dce0;--metal-band:#a3adb5;--metal-edge:#75828b}
+#mega-engagement .metal-face{fill:var(--metal-face)}
+#mega-engagement .metal-band{fill:var(--metal-band)}
+#mega-engagement .metal-opening{fill:var(--ivory)}
+#mega-engagement .metal-glint{fill:none;stroke:#fff;opacity:.75}
+#mega-engagement .mega-promo>img{height:170px;object-position:center 40%}
+#mega-engagement .mega-caption{font-size:25px;padding-top:16px}
+@media(min-width:1001px) and (max-width:1150px){
+  #mega-engagement .mega-inner{grid-template-columns:minmax(265px,1.6fr) minmax(155px,1fr) minmax(120px,.8fr) 180px;gap:18px}
+  #mega-engagement .mega-ring-styles>.mega-links{column-gap:10px}
+  #mega-engagement .mega-ring-styles>.mega-links>a{font-size:11px;gap:7px}
+  #mega-engagement .engagement-style-icon{width:36px;height:26px;flex-basis:36px}
+  #mega-engagement .mega-ring-styles>.mega-links>a:after{left:43px;max-width:calc(100% - 43px)}
+}
+@media(min-width:651px) and (max-width:1000px){
+  #mega-engagement .mega-inner{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr) minmax(0,.85fr);gap:20px}
+  #mega-engagement .mega-ring-styles>.mega-links{column-gap:10px}
+  #mega-engagement .mega-ring-styles>.mega-links>a{font-size:11px;gap:7px}
+  #mega-engagement .engagement-style-icon{width:34px;height:24px;flex-basis:34px}
+  #mega-engagement .mega-ring-styles>.mega-links>a:after{left:41px;max-width:calc(100% - 41px)}
+  #mega-engagement .engagement-metal-shortcuts .mega-links{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  #mega-engagement .mega-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}
+  #mega-engagement .mega-ring-styles{grid-column:1/-1}
+  #mega-engagement .mega-ring-styles>.mega-links{gap:2px 16px}
+  #mega-engagement .mega-ring-styles>.mega-links>a{min-height:44px;font-size:12px}
+  #mega-engagement .engagement-metal-shortcuts{margin-top:14px;padding-top:14px}
+  #mega-engagement .engagement-metal-shortcuts .mega-links{grid-template-columns:1fr}
+}
+
+/* Wedding only: a generous style directory, personal guidance, and campaign card. */
+#mega-wedding .mega-inner{max-width:1400px;grid-template-columns:minmax(300px,1.6fr) minmax(150px,.8fr) minmax(200px,1fr) minmax(210px,250px);gap:36px;padding-top:36px;padding-bottom:32px}
+#mega-wedding .mega-group{min-width:0}
+#mega-wedding .mega-group h2{margin-bottom:20px;letter-spacing:.15em}
+#mega-wedding .mega-wedding-styles>.mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 18px}
+#mega-wedding .mega-wedding-links>.mega-links{row-gap:5px}
+#mega-wedding .mega-wedding-links .mega-links>a{display:flex;align-items:center;gap:10px;min-height:44px;width:100%;padding:6px 0;font:12px/1.45 var(--sans)}
+#mega-wedding .wedding-menu-icon{width:30px;height:30px;flex:0 0 30px;fill:none;stroke:var(--wine);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+#mega-wedding .mega-wedding-links .mega-links>a:after{left:40px;max-width:calc(100% - 40px)}
+#mega-wedding .mega-promo{overflow:hidden}
+#mega-wedding .mega-promo>img{height:180px;object-fit:contain;object-position:center;mix-blend-mode:multiply}
+#mega-wedding .mega-caption{padding:19px 19px 10px;font-size:28px;line-height:1.08}
+#mega-wedding .mega-supporting-text{display:block;padding:0 19px 17px;font:11px/1.75 var(--sans);color:var(--muted)}
+#mega-wedding .mega-cta{padding:0 19px 20px;font-size:10px;color:var(--wine)}
+@media(min-width:1001px) and (max-width:1200px){
+  #mega-wedding .mega-inner{grid-template-columns:minmax(260px,1.5fr) minmax(130px,.8fr) minmax(175px,1fr) 190px;gap:20px}
+  #mega-wedding .mega-wedding-styles>.mega-links{column-gap:10px}
+  #mega-wedding .mega-wedding-links>.mega-links>a{font-size:11px;gap:8px}
+  #mega-wedding .wedding-menu-icon{width:28px;height:28px;flex-basis:28px}
+  #mega-wedding .mega-wedding-links>.mega-links>a:after{left:36px;max-width:calc(100% - 36px)}
+  #mega-wedding .mega-promo>img{height:164px}
+  #mega-wedding .mega-caption{font-size:25px}
+}
+@media(min-width:651px) and (max-width:1000px){
+  #mega-wedding .mega-inner{grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr) minmax(0,1.1fr);gap:20px;padding-top:28px;padding-bottom:28px}
+  #mega-wedding .mega-wedding-styles>.mega-links{column-gap:10px}
+  #mega-wedding .mega-wedding-links>.mega-links>a{font-size:11px;gap:7px}
+  #mega-wedding .wedding-menu-icon{width:26px;height:26px;flex-basis:26px}
+  #mega-wedding .mega-wedding-links>.mega-links>a:after{left:33px;max-width:calc(100% - 33px)}
+}
+@media(max-width:650px){
+  #mega-wedding .mega-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;padding:24px 0 20px}
+  #mega-wedding .mega-wedding-styles{grid-column:1/-1}
+  #mega-wedding .mega-group h2{margin-bottom:12px}
+  #mega-wedding .mega-wedding-styles>.mega-links{column-gap:18px}
+  #mega-wedding .mega-wedding-links>.mega-links>a{gap:8px;font-size:12px}
+  #mega-wedding .wedding-menu-icon{width:26px;height:26px;flex-basis:26px}
+  #mega-wedding .mega-wedding-links>.mega-links>a:after{left:34px;max-width:calc(100% - 34px)}
+}
+
+/* Stronger hierarchy and fine rules throughout every directory. */
+#navigation .mega-group h2{font:650 14px/1.4 var(--sans);letter-spacing:.055em;margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid var(--line)}
+#navigation .mega-secondary,#navigation .engagement-metal-shortcuts{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+#navigation .mega-secondary h3,#navigation .engagement-metal-shortcuts h3{font:600 12px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--wine);margin:0 0 7px}
+
+/* Compact shared shell: wider usable columns, less empty space beneath them. */
+@media(min-width:651px){
+ #navigation .mega-menu{height:min(364px,calc(100svh - var(--menu-header,130px)));max-height:none;display:flex;flex-direction:column;overflow:hidden}
+ #navigation :is(#mega-diamonds,#mega-engagement,#mega-wedding,#mega-jewelry) .mega-inner{width:min(1560px,100%);max-width:1560px;min-height:0;margin:0 auto;flex:1;overflow:auto;padding:22px 36px 18px;gap:clamp(22px,2.3vw,36px);grid-template-columns:minmax(0,1.6fr) minmax(0,1.15fr) minmax(0,.95fr) minmax(0,1fr);align-content:start}
+ #navigation .mega-bottom{width:min(1488px,calc(100% - 72px));max-width:1488px;margin:0 auto;min-height:43px;flex:none;padding:11px 0}
+ #navigation .mega-group{min-width:0}
+ #navigation :is(#mega-engagement,#mega-wedding) .mega-promo>img{height:132px}
+ #navigation :is(#mega-engagement,#mega-wedding) .mega-caption{font-size:25px;padding:12px 16px 8px}
+ #navigation .mega-supporting-text{padding:0 16px 9px;font-size:10px;line-height:1.5}
+ #navigation .mega-cta{padding:0 16px 12px}
+ #navigation #mega-engagement .mega-ring-styles>.mega-links>a{min-height:38px}
+ #navigation #mega-wedding .mega-wedding-links .mega-links>a{min-height:36px;padding:3px 0}
+ #navigation #mega-wedding .mega-wedding-links .mega-links{row-gap:3px}
+ #navigation #mega-diamonds .mega-inner{grid-template-columns:minmax(0,1.7fr) minmax(0,1.35fr) minmax(0,1fr) minmax(0,1fr)}
+ #navigation #mega-diamonds .mega-shapes .mega-links{gap:12px 12px}
+ #navigation .mega-antique .mega-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 12px}
+}
+@media(min-width:1001px) and (max-width:1200px){
+ #navigation .mega-group h2{font-size:12px}
+ #navigation #mega-diamonds .mega-inner{grid-template-columns:minmax(0,1.8fr) minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:20px;padding-left:26px;padding-right:26px}
+ #navigation #mega-diamonds :is(.mega-shapes,.mega-antique) .mega-links{column-gap:4px}
+}
+@media(min-width:651px) and (max-width:1000px){
+ #navigation .mega-menu{height:min(420px,calc(100svh - var(--menu-header,130px)))}
+ #navigation .mega-group h2{font-size:12px}
+ #navigation :is(#mega-engagement,#mega-wedding) .mega-inner{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:22px;padding:22px 28px}
+ #navigation :is(#mega-diamonds,#mega-jewelry) .mega-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 32px;padding:22px 28px}
+ #navigation #mega-diamonds .mega-shapes .mega-links{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px 3px}
+ #navigation .mega-antique .mega-links{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 3px}
+}
+@media(max-width:650px){
+ #navigation .mega-group h2{font-size:12px;padding-bottom:9px;margin-bottom:10px}
+ #navigation .mega-secondary h3,#navigation .engagement-metal-shortcuts h3{font-size:11px}
+ #navigation .mega-antique{grid-column:1/-1}
+ #navigation .mega-antique .mega-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 5px}
+ #mega-wedding .mega-wedding-links .mega-links>a{gap:8px;font-size:12px}
+ #mega-wedding .mega-wedding-links .mega-links>a:after{left:34px;max-width:calc(100% - 34px)}
+}
+
+/* Identical optical frames: paths are centered and normalized inside each SVG,
+   with their original proportions preserved. Classic and antique sizes match. */
+#navigation :is(.mega-shapes,.mega-antique) a{display:flex;flex-direction:column;align-items:center;gap:5px;width:100%;min-height:0;padding:5px 2px 7px;font-size:10px;line-height:1.4;text-align:center;border-radius:2px}
+#navigation :is(.mega-shapes,.mega-antique) a>span{min-height:28px;display:flex;align-items:flex-start;justify-content:center}
+#navigation :is(.mega-shapes,.mega-antique) img{width:52px;height:52px;flex:none;object-fit:contain;transition:transform .18s}
+#navigation :is(.mega-shapes,.mega-antique) a:hover{background:var(--warm);text-decoration:none}
+#navigation :is(.mega-shapes,.mega-antique) a:after{display:none}
+#navigation :is(.mega-shapes,.mega-antique) a:hover img{transform:translateY(-2px)}
+@media(min-width:651px) and (max-width:1000px){
+ #navigation #mega-diamonds :is(.mega-shapes,.mega-antique) img{width:40px;height:40px}
+ #navigation :is(.mega-shapes,.mega-antique) a{font-size:9px}
+}
+@media(max-width:650px){
+ #navigation :is(.mega-shapes,.mega-antique) img{width:44px;height:44px}
+ #navigation :is(.mega-shapes,.mega-antique) a{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){#navigation :is(.mega-shapes,.mega-antique) img{transition:none}}
+
+/* Wedding and Jewelry follow Engagement's compact, illustrated directory.
+   The shared shell and the Diamond / Engagement layouts are left untouched. */
+#navigation #mega-wedding .engagement-metal-shortcuts h3{font-size:11px;letter-spacing:.045em}
+#navigation #mega-wedding .engagement-metal-shortcuts .mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 12px}
+#navigation #mega-wedding .engagement-metal-shortcuts a{display:flex;align-items:center;gap:7px;font-size:11px;width:100%;line-height:1.3}
+#navigation #mega-wedding .engagement-metal-icon{width:26px;height:24px;flex:0 0 26px;--metal-face:#e4e1dc;--metal-band:#b9b6b0;--metal-edge:#85827e;stroke:var(--metal-edge);stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+#navigation #mega-wedding .engagement-metal-icon[data-metal-tone="Yellow gold"]{--metal-face:#ecd09a;--metal-band:#c49b55;--metal-edge:#a37b3e}
+#navigation #mega-wedding .engagement-metal-icon[data-metal-tone="Rose gold"]{--metal-face:#ebc1ad;--metal-band:#c68e78;--metal-edge:#ad7565}
+#navigation #mega-wedding .engagement-metal-icon[data-metal-tone="Platinum"]{--metal-face:#d6dce0;--metal-band:#a3adb5;--metal-edge:#75828b}
+#navigation #mega-wedding .metal-face{fill:var(--metal-face)}
+#navigation #mega-wedding .metal-band{fill:var(--metal-band)}
+#navigation #mega-wedding .metal-opening{fill:var(--ivory)}
+#navigation #mega-wedding .metal-glint{fill:none;stroke:#fff;opacity:.75}
+#navigation #mega-wedding .engagement-metal-shortcuts a:after{left:33px;max-width:calc(100% - 33px)}
+#navigation #mega-jewelry .mega-jewelry-links .mega-links>a{display:flex;align-items:center;gap:9px;width:100%;min-height:34px;padding:3px 0;font:12px/1.4 var(--sans)}
+#navigation #mega-jewelry .jewelry-menu-icon{width:30px;height:30px;flex:0 0 30px;fill:none;stroke:var(--wine);stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+#navigation #mega-jewelry .mega-jewelry-links .mega-links>a:after{left:39px;max-width:calc(100% - 39px)}
+#navigation #mega-jewelry .mega-necklace-styles>.mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 14px}
+#navigation #mega-jewelry .mega-group:nth-child(2) .mega-secondary .mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 14px}
+#navigation :is(#mega-wedding,#mega-jewelry) .mega-links>a:focus-visible{outline:1px solid var(--wine);outline-offset:3px;border-radius:2px}
+@media(min-width:651px){
+ #navigation #mega-wedding .mega-wedding-links .mega-links>a{min-height:30px;padding:2px 0}
+ #navigation #mega-wedding .wedding-menu-icon{width:26px;height:26px;flex-basis:26px}
+ #navigation #mega-wedding .mega-wedding-links .mega-links>a:after{left:36px;max-width:calc(100% - 36px)}
+ #navigation #mega-wedding .engagement-metal-shortcuts{margin-top:10px;padding-top:10px}
+ #navigation #mega-wedding .engagement-metal-shortcuts a{min-height:30px;gap:7px}
+ #navigation #mega-wedding .engagement-metal-shortcuts a:after{left:33px;max-width:calc(100% - 33px)}
+ #navigation #mega-jewelry .mega-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,1.35fr) minmax(0,1.25fr) minmax(0,1.1fr)}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links{row-gap:3px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary a{min-height:31px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary .jewelry-menu-icon{width:26px;height:26px;flex-basis:26px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary a:after{left:35px;max-width:calc(100% - 35px)}
+}
+@media(min-width:1001px) and (max-width:1200px){
+ #navigation #mega-jewelry .mega-inner{padding-left:26px;padding-right:26px;gap:20px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links>a{font-size:11px;gap:7px}
+ #navigation #mega-jewelry .jewelry-menu-icon{width:26px;height:26px;flex-basis:26px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links>a:after{left:33px;max-width:calc(100% - 33px)}
+ #navigation #mega-jewelry .mega-necklace-styles>.mega-links,#navigation #mega-jewelry .mega-group:nth-child(2) .mega-secondary .mega-links{column-gap:8px}
+}
+@media(min-width:1001px){
+ #navigation :is(#mega-wedding,#mega-jewelry) .mega-inner{padding-top:18px;padding-bottom:14px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links>a{min-height:30px;padding:2px 0}
+ #navigation #mega-jewelry .jewelry-menu-icon{width:26px;height:26px;flex-basis:26px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links>a:after{left:35px;max-width:calc(100% - 35px)}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary a{min-height:28px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary .jewelry-menu-icon{width:24px;height:24px;flex-basis:24px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-secondary a:after{left:33px;max-width:calc(100% - 33px)}
+}
+@media(min-width:651px) and (max-width:1000px){
+ #navigation #mega-jewelry .mega-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 30px}
+ #navigation #mega-wedding .engagement-metal-shortcuts .mega-links{column-gap:8px}
+ #navigation #mega-wedding .engagement-metal-shortcuts .engagement-metal-icon{width:23px;flex-basis:23px}
+ #navigation #mega-wedding .engagement-metal-shortcuts a{gap:5px;font-size:10px}
+ #navigation #mega-wedding .engagement-metal-shortcuts a:after{left:28px;max-width:calc(100% - 28px)}
+}
+@media(max-width:650px){
+ #navigation #mega-wedding .engagement-metal-shortcuts .mega-links{grid-template-columns:1fr;gap:0}
+ #navigation #mega-wedding .mega-wedding-links .mega-links>a,#navigation #mega-jewelry .mega-jewelry-links .mega-links>a{min-height:44px;padding:7px 0;gap:8px}
+ #navigation #mega-jewelry .jewelry-menu-icon{width:26px;height:26px;flex-basis:26px}
+ #navigation #mega-jewelry .mega-jewelry-links .mega-links>a:after{left:34px;max-width:calc(100% - 34px)}
+ #navigation #mega-jewelry .mega-group:nth-child(2) .mega-secondary .mega-links{grid-template-columns:1fr}
+ #navigation #mega-jewelry .mega-necklace-styles,#navigation #mega-jewelry .mega-group:last-child{grid-column:1/-1}
+ #navigation #mega-jewelry .mega-group:last-child .mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}
+}
+
+/* TJS collection directory: a burgundy layer distinct from the cream masthead.
+   Local tokens keep every original icon, route and compact menu layout intact. */
+#navigation .mega-menu{
+ --menu-surface:#431421;
+ --wine:#f7f1e8;
+ --ink:#f0e4dc;
+ --muted:#d0b8ba;
+ --line:rgba(239,227,210,.22);
+ --warm:rgba(247,241,232,.07);
+ color:var(--ink);
+ background:var(--menu-surface);
+ border-top:1px solid #774350;
+ border-bottom:1px solid #2b0d16;
+ box-shadow:0 20px 35px rgba(43,13,22,.2);
+ scrollbar-color:#95727a var(--menu-surface);
+}
+#navigation .mega-menu .mega-group h2{
+ color:var(--wine);
+ font:500 20px/1.2 var(--serif);
+ letter-spacing:-.012em;
+ text-transform:none;
+ padding-bottom:11px;
+ margin-bottom:9px;
+ border-bottom-color:var(--line);
+}
+#navigation .mega-menu .mega-secondary h3,
+#navigation .mega-menu .engagement-metal-shortcuts h3{
+ color:#dfc7b4;
+ font-weight:600;
+ font-size:10px;
+ letter-spacing:.1em;
+}
+#navigation .mega-menu .mega-links a{
+ transition:color .18s ease,background-color .18s ease;
+ text-decoration:none;
+}
+#navigation .mega-menu .mega-links a:hover,
+#navigation .mega-menu .mega-links a:focus-visible{color:#fffaf4}
+#navigation .mega-menu .mega-links a:after{background:#d9bca2;height:1px}
+#navigation .mega-menu a:focus-visible{
+ outline:2px solid #e3cbb5;
+ outline-offset:3px;
+ border-radius:1px;
+}
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) img{
+ filter:brightness(0) saturate(100%) invert(93%) sepia(11%) saturate(364%) hue-rotate(334deg) brightness(99%) contrast(94%);
+ opacity:.9;
+}
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) a{
+ border:1px solid transparent;
+ border-radius:0;
+}
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) a:hover,
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) a:focus-visible{
+ background:rgba(247,241,232,.07);
+ border-color:rgba(239,227,210,.2);
+}
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) a:hover span{text-decoration:none}
+#navigation .mega-menu :is(.mega-shapes,.mega-antique) a:hover img{opacity:1}
+#navigation .mega-menu .mega-types svg{
+ width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.1;
+}
+#navigation .mega-menu .mega-types .mega-links a{
+ display:grid;grid-template-columns:24px 1fr;align-items:center;column-gap:10px;
+ width:100%;min-height:46px;padding:7px 0;
+}
+#navigation .mega-menu .mega-types .menu-link-note{grid-column:2;margin-top:0;font-size:10px}
+#navigation :is(#mega-engagement,#mega-wedding) .metal-opening{fill:var(--menu-surface)}
+#navigation .mega-menu .mega-promo{
+ --wine:#5a1b2a;--ink:#35262b;--muted:#786a6b;--warm:#efe3d2;
+ color:var(--ink);background:var(--warm);overflow:hidden;
+ box-shadow:0 0 0 1px rgba(239,227,210,.12);
+}
+#navigation .mega-menu .mega-promo>img{transition:transform .4s ease}
+#navigation .mega-menu .mega-promo:hover>img{transform:scale(1.025)}
+#navigation .mega-menu .mega-promo:focus-visible{outline-offset:4px}
+#navigation .mega-menu .mega-cta{font-size:10px;letter-spacing:.02em}
+#navigation .mega-menu .mega-cta>span{transition:transform .2s ease}
+#navigation .mega-menu .mega-promo:hover .mega-cta>span{transform:translate(2px,-2px)}
+#navigation .mega-menu .mega-bottom{color:var(--muted)}
+#navigation .mega-menu .mega-bottom>a{
+ display:inline-flex;align-items:center;gap:24px;min-height:25px;
+ color:var(--wine);font-size:11px;letter-spacing:.025em;
+}
+#navigation .mega-menu .mega-bottom>a>span{transition:transform .2s ease}
+#navigation .mega-menu .mega-bottom>a:hover>span{transform:translate(2px,-2px)}
+#navigation .mega-menu .mega-bottom>span{font:italic 16px/1.2 var(--serif);letter-spacing:0}
+/* Leave room for the final care link without a one-pixel desktop scrollbar. */
+@media(min-width:1001px){#navigation #mega-wedding .mega-inner{padding-bottom:12px}}
+@media(min-width:1001px) and (max-width:1200px){
+ #navigation .mega-menu .mega-group h2{font-size:18px}
+}
+@media(min-width:651px) and (max-width:1000px){
+ #navigation .mega-menu .mega-group h2{font-size:18px}
+}
+@media(max-width:650px){
+ #navigation .mega-menu{
+  margin:0 -12px 12px;padding:0 12px;
+  border-top:1px solid #774350;border-bottom:1px solid #2b0d16;box-shadow:none;
+ }
+ #navigation .mega-menu .mega-group h2{font-size:18px;padding-bottom:10px}
+ #navigation .mega-menu .mega-secondary h3,
+ #navigation .mega-menu .engagement-metal-shortcuts h3{font-size:10px;letter-spacing:.07em}
+ #navigation .mega-menu .mega-types .mega-links a{min-height:44px}
+ #navigation .mega-menu .mega-bottom>a{min-height:36px}
+}
+@media(prefers-reduced-motion:reduce){
+ #navigation .mega-menu .mega-links a,
+ #navigation .mega-menu .mega-promo>img,
+ #navigation .mega-menu .mega-cta>span,
+ #navigation .mega-menu .mega-bottom>a>span{transition:none}
+ #navigation .mega-menu .mega-promo:hover>img,
+ #navigation .mega-menu .mega-promo:hover .mega-cta>span,
+ #navigation .mega-menu .mega-bottom>a:hover>span{transform:none}
+}

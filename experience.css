@@ -1,0 +1,29 @@
+/* Readable utility counts, independent of icon stroke and font inheritance. */
+.header-actions .icon{overflow:visible;isolation:isolate}
+.header-actions .count-badge{position:absolute;z-index:1;right:-5px;top:-3px;display:grid;place-items:center;min-width:21px;height:21px;padding:0 4px;border:2px solid var(--ivory);border-radius:20px;background:var(--wine);color:#fff;font:700 11px/1 var(--sans);font-variant-numeric:tabular-nums;text-align:center;letter-spacing:0;white-space:nowrap;pointer-events:none;box-sizing:border-box}
+.header-actions .icon svg{flex:none}.wish.saved{background:var(--wine);color:var(--ivory)}.wish.saved svg{fill:none;stroke:var(--ivory)}
+.welcome-launch{padding:0;border-bottom:1px solid currentColor;color:var(--ivory);font-size:11px;margin:5px 0 20px}
+dialog.welcome-dialog{position:fixed;inset:0;margin:auto;width:min(740px,calc(100% - 36px));max-width:740px;height:fit-content;max-height:calc(100svh - 36px);overflow:auto;padding:0;border:0;background:var(--ivory);color:var(--ink);box-shadow:0 25px 90px #2b0d1655}
+.welcome-dialog::backdrop{background:#2b0d1670;backdrop-filter:blur(5px)}
+.welcome-layout{display:grid;grid-template-columns:.86fr 1.14fr}
+.welcome-image{position:relative;background:var(--warm);min-height:410px;overflow:hidden}
+.welcome-image img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:52% center}
+.welcome-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#2b0d1680,transparent 42%)}
+.welcome-image-caption{position:absolute;bottom:25px;left:0;right:0;z-index:1;text-align:center;color:var(--ivory);font:400 12px/1.4 var(--serif);letter-spacing:.16em}
+.welcome-copy{padding:54px 36px 27px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.welcome-copy .eyebrow{font-size:9px;margin:0 0 23px;letter-spacing:.18em;color:var(--wine)}
+.welcome-copy .welcome-headline{display:flex;align-items:baseline;justify-content:center;gap:9px;margin:0 0 16px;color:var(--wine);font-weight:400;line-height:1}
+.welcome-value{font:400 94px/.9 var(--serif);letter-spacing:-.055em}
+.welcome-headline em{font:italic 40px/1 var(--serif);letter-spacing:-.035em}
+.welcome-copy .welcome-intro{font:400 23px/1.3 var(--serif);margin:0 0 27px;color:var(--ink)}
+.welcome-copy .button{margin:0;font-size:11px;letter-spacing:.09em;min-height:48px}
+.welcome-decline{align-self:center;margin:9px 0 12px;font-size:11px;padding:12px 16px;min-height:44px;color:var(--wine);text-decoration:underline;text-underline-offset:4px}
+.welcome-copy .welcome-preview{font-size:9px;line-height:1.5;color:var(--wine);opacity:.8;margin:0}
+.welcome-close{position:absolute;right:9px;top:9px;z-index:2;width:44px;height:44px;font-size:24px;line-height:1;display:grid;place-items:center;background:transparent;color:var(--wine);border-radius:50%}
+.welcome-close:hover{background:var(--warm)}
+.welcome-copy .welcome-pending-title{font:400 42px/1.05 var(--serif);margin:0 0 20px;color:var(--wine)}
+.welcome-copy .welcome-pending-copy{font-size:13px;line-height:1.6;margin:0 0 28px}
+.welcome-dialog[open]{animation:welcome-enter .28s ease both}
+@keyframes welcome-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){.header-actions{gap:3px}.header-actions .count-badge{min-width:20px;height:20px;right:-4px;top:-2px;font-size:10px}.welcome-layout{grid-template-columns:1fr}.welcome-image{display:none}.welcome-copy{padding:58px 27px 26px;min-height:370px}.welcome-value{font-size:88px}.welcome-headline em{font-size:36px}.welcome-copy .welcome-intro{font-size:22px}.welcome-copy .welcome-preview{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.welcome-dialog[open]{animation:none}}
