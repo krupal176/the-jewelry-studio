@@ -59,5 +59,5 @@ const LOCAL_ASSETS={
   "https://www.thejewelrystudio.us/cdn/shop/files/heart_1.svg": "assets/shape-heart.svg",
   "https://www.thejewelrystudio.us/cdn/shop/files/pear_1.svg": "assets/shape-pear.svg",
   "https://www.thejewelrystudio.us/cdn/shop/files/engagement-rings-main.png": "assets/custom.png",
-  "https://cdn.shopify.com/videos/c/o/v/d884753f5a5445d48a355d3ac062a623.mp4": "assets/video.mp4"
+  "https://cdn.shopify.com/videos/c/o/v/d884753f5a5445d48a355d3ac062a623.mp4": "https://github.com/krupal176/the-jewelry-studio/releases/download/hero-video-v1/video.mp4"
 };
